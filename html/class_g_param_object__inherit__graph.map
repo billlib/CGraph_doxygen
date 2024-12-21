@@ -1,0 +1,17 @@
+<map id="GParamObject" name="GParamObject">
+<area shape="rect" id="node1" title=" " alt="" coords="277,245,392,272"/>
+<area shape="rect" id="node4" href="$class_g_message_param.html" title=" " alt="" coords="440,81,571,108"/>
+<area shape="rect" id="node8" href="$class_g_param.html" title=" " alt="" coords="469,220,542,247"/>
+<area shape="rect" id="node13" href="$class_g_param_manager.html" title=" " alt="" coords="440,271,571,297"/>
+<area shape="rect" id="node14" href="$class_g_passed_param.html" title=" " alt="" coords="446,335,565,361"/>
+<area shape="rect" id="node2" href="$class_graph_object.html" title=" " alt="" coords="127,245,229,272"/>
+<area shape="rect" id="node3" href="$class_c_object.html" title=" " alt="" coords="5,245,79,272"/>
+<area shape="rect" id="node5" href="$struct_image_m_param.html" title=" " alt="" coords="644,5,760,32"/>
+<area shape="rect" id="node6" href="$struct_input_m_param.html" title=" " alt="" coords="648,56,756,83"/>
+<area shape="rect" id="node7" href="$struct_result_m_param.html" title=" " alt="" coords="644,107,760,133"/>
+<area shape="rect" id="node9" href="$struct_d_ann_param.html" title=" " alt="" coords="653,157,751,184"/>
+<area shape="rect" id="node10" href="$struct_detect_result_g_param.html" title=" " alt="" coords="623,208,781,235"/>
+<area shape="rect" id="node11" href="$struct_nums_g_param.html" title=" " alt="" coords="647,259,757,285"/>
+<area shape="rect" id="node12" href="$struct_process_g_param.html" title=" " alt="" coords="641,309,763,336"/>
+<area shape="rect" id="node15" href="$class_g_passed_default_param.html" title=" " alt="" coords="619,360,785,387"/>
+</map>

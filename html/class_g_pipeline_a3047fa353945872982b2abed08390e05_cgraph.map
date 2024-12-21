@@ -1,0 +1,9 @@
+<map id="GPipeline::trim" name="GPipeline::trim">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,124,57"/>
+<area shape="rect" id="node2" href="$class_g_element_manager.html#adb8d54ad8ffe5c83063bf790fefbfbd0" title=" " alt="" coords="172,31,351,57"/>
+<area shape="rect" id="node3" href="$class_g_trim_optimizer.html#a52b860de40163586c7d0142456b660fd" title=" " alt="" coords="399,31,557,57"/>
+<area shape="rect" id="node4" href="$class_g_optimizer.html#a7fb744697a02f8ed5d38d4b6a54d45a9" title=" " alt="" coords="609,5,784,32"/>
+<area shape="rect" id="node5" href="$class_g_optimizer.html#a3a2c149058812d1be4d196991ecb0ffa" title=" " alt="" coords="605,56,788,83"/>
+<area shape="rect" id="node6" href="$class_g_optimizer.html#adb5206167521ad6fe66664c62f9924ee" title=" " alt="" coords="836,56,983,83"/>
+<area shape="rect" id="node7" href="$class_u_small_vector.html#a2b3482ac22f58e2df57f1feecad96f8e" title=" " alt="" coords="1031,56,1191,83"/>
+</map>

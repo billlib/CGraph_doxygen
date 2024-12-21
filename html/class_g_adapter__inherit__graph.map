@@ -1,0 +1,12 @@
+<map id="GAdapter" name="GAdapter">
+<area shape="rect" id="node1" title=" " alt="" coords="241,304,323,331"/>
+<area shape="rect" id="node7" href="$class_g_coordinator.html" title=" " alt="" coords="5,379,172,405"/>
+<area shape="rect" id="node8" href="$class_g_fence.html" title=" " alt="" coords="196,379,267,405"/>
+<area shape="rect" id="node9" href="$class_g_function.html" title=" " alt="" coords="291,379,377,405"/>
+<area shape="rect" id="node10" href="$class_g_singleton.html" title=" " alt="" coords="402,379,533,405"/>
+<area shape="rect" id="node2" href="$class_g_element.html" title=" " alt="" coords="239,229,325,256"/>
+<area shape="rect" id="node3" href="$class_g_element_object.html" title=" " alt="" coords="153,155,281,181"/>
+<area shape="rect" id="node4" href="$class_graph_object.html" title=" " alt="" coords="165,80,268,107"/>
+<area shape="rect" id="node5" href="$class_c_object.html" title=" " alt="" coords="180,5,253,32"/>
+<area shape="rect" id="node6" href="$class_c_desc_info.html" title=" " alt="" coords="305,155,393,181"/>
+</map>

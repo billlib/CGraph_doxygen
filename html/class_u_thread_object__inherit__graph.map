@@ -1,0 +1,22 @@
+<map id="UThreadObject" name="UThreadObject">
+<area shape="rect" id="node1" title=" " alt="" coords="269,477,388,503"/>
+<area shape="rect" id="node4" href="$class_u_queue_object.html" title=" " alt="" coords="436,294,552,321"/>
+<area shape="rect" id="node14" href="$class_u_semaphore.html" title=" " alt="" coords="441,401,547,427"/>
+<area shape="rect" id="node15" href="$class_u_spin_lock.html" title=" " alt="" coords="449,451,539,478"/>
+<area shape="rect" id="node16" href="$class_u_task_group.html" title=" " alt="" coords="444,502,544,529"/>
+<area shape="rect" id="node17" href="$class_u_thread_base.html" title=" " alt="" coords="439,553,549,579"/>
+<area shape="rect" id="node20" href="$class_u_thread_pool.html" title=" " alt="" coords="441,603,547,630"/>
+<area shape="rect" id="node2" href="$class_utils_object.html" title=" " alt="" coords="127,477,221,503"/>
+<area shape="rect" id="node3" href="$class_c_object.html" title=" " alt="" coords="5,477,79,503"/>
+<area shape="rect" id="node5" href="$class_u_atomic_priority_queue.html" title=" " alt="" coords="649,5,815,47"/>
+<area shape="rect" id="node6" href="$class_u_atomic_queue.html" title=" " alt="" coords="637,71,827,98"/>
+<area shape="rect" id="node7" href="$class_u_atomic_ring_buffer_queue.html" title=" " alt="" coords="600,122,864,178"/>
+<area shape="rect" id="node8" href="$class_u_work_stealing_queue.html" title=" " alt="" coords="652,203,812,244"/>
+<area shape="rect" id="node9" href="$class_u_atomic_priority_queue.html" title=" " alt="" coords="629,269,835,295"/>
+<area shape="rect" id="node10" href="$class_u_atomic_queue.html" title=" " alt="" coords="653,319,811,346"/>
+<area shape="rect" id="node11" href="$class_u_atomic_ring_buffer_queue.html" title=" " alt="" coords="638,371,826,412"/>
+<area shape="rect" id="node12" href="$class_u_lock_free_ring_buffer_queue.html" title=" " alt="" coords="632,436,832,477"/>
+<area shape="rect" id="node13" href="$class_u_work_stealing_queue.html" title=" " alt="" coords="633,502,831,529"/>
+<area shape="rect" id="node18" href="$class_u_thread_primary.html" title=" " alt="" coords="668,553,796,579"/>
+<area shape="rect" id="node19" href="$class_u_thread_secondary.html" title=" " alt="" coords="659,603,805,630"/>
+</map>
