@@ -1,0 +1,7 @@
+<map id="UThreadPool::init" name="UThreadPool::init">
+<area shape="rect" id="node1" title=" " alt="" coords="5,63,140,90"/>
+<area shape="rect" id="node2" href="$class_u_thread_pool.html#a78aa0f25971774e7bd5c968349f2658f" title=" " alt="" coords="400,5,623,47"/>
+<area shape="rect" id="node3" href="$class_u_thread_pool.html#a1759c459c16239892a174ce594d1e223" title=" " alt="" coords="188,63,352,90"/>
+<area shape="rect" id="node5" href="$class_u_atomic_queue.html#aed167973e9db6d025f624db5b3b8b3e9" title=" " alt="" coords="188,114,352,141"/>
+<area shape="rect" id="node4" href="$class_u_atomic_priority_queue.html#a2a779cb749f7de75df9676541ceea915" title=" " alt="" coords="428,71,595,112"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="GPipeline::destroy" name="GPipeline::destroy">
+<area shape="rect" id="node1" title=" " alt="" coords="5,132,147,159"/>
+<area shape="rect" id="node2" href="$class_g_daemon_manager.html#a89ab6476a9dec5007c40098176bbd647" title=" " alt="" coords="195,5,396,32"/>
+<area shape="rect" id="node3" href="$class_g_element_manager.html#a7fd695c1141334ac73ca28440bc147dd" title=" " alt="" coords="195,56,395,83"/>
+<area shape="rect" id="node4" href="$class_g_event_manager.html#a6f60945d7398bee8e3b9c57517f7f78e" title=" " alt="" coords="204,107,387,133"/>
+<area shape="rect" id="node5" href="$class_g_param_manager.html#ae2a3ab71c8fa9dd680c989302f5f1984" title=" " alt="" coords="202,157,389,184"/>
+<area shape="rect" id="node6" href="$class_g_schedule.html#ac267b986abc6bfbaad066b072ce1112c" title=" " alt="" coords="221,208,369,235"/>
+<area shape="rect" id="node7" href="$class_g_element_repository.html#a6699d4b398407177f5d5ee852a39522a" title=" " alt="" coords="217,259,373,301"/>
+<area shape="rect" id="node8" href="$class_g_element_repository.html#a6adf69d44afaeafaea0e8740cdd9abdc" title=" " alt="" coords="444,259,600,301"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="DAnnNode" name="DAnnNode">
+<area shape="rect" id="node1" title=" " alt="" coords="87,379,177,405"/>
+<area shape="rect" id="node2" href="$class_d_ann_object.html" title=" " alt="" coords="25,229,124,256"/>
+<area shape="rect" id="node3" href="$class_domain_object.html" title=" " alt="" coords="5,80,120,107"/>
+<area shape="rect" id="node4" href="$class_c_object.html" title=" " alt="" coords="93,5,166,32"/>
+<area shape="rect" id="node8" href="$class_graph_object.html" title=" " alt="" coords="145,80,247,107"/>
+<area shape="rect" id="node5" href="$class_g_node.html" title=" " alt="" coords="147,304,213,331"/>
+<area shape="rect" id="node6" href="$class_g_element.html" title=" " alt="" coords="150,229,237,256"/>
+<area shape="rect" id="node7" href="$class_g_element_object.html" title=" " alt="" coords="129,155,257,181"/>
+<area shape="rect" id="node9" href="$class_c_desc_info.html" title=" " alt="" coords="281,155,369,181"/>
+</map>
