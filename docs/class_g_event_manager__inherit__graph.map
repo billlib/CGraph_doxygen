@@ -1,7 +1,7 @@
 <map id="GEventManager" name="GEventManager">
 <area shape="rect" id="node1" title=" " alt="" coords="105,229,232,256"/>
 <area shape="rect" id="node2" href="$class_g_event_object.html" title=" " alt="" coords="25,155,136,181"/>
-<area shape="rect" id="node3" href="$class_graph_object.html" title=" " alt="" coords="5,80,108,107"/>
+<area shape="rect" id="node3" href="$class_graph_object.html" title="GraphObject = CObject，没有新增或删除任何成员" alt="" coords="5,80,108,107"/>
 <area shape="rect" id="node4" href="$class_c_object.html" title=" " alt="" coords="120,5,193,32"/>
 <area shape="rect" id="node6" href="$class_graph_manager.html" title=" " alt="" coords="161,155,355,181"/>
 <area shape="rect" id="node5" href="$class_c_desc_info.html" title=" " alt="" coords="133,80,221,107"/>

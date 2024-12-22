@@ -1,13 +1,13 @@
 <map id="GGroup" name="GGroup">
-<area shape="rect" id="node1" title=" " alt="" coords="235,304,305,331"/>
+<area shape="rect" id="node1" title="所有节点组合的基类，所有节点组合功能，均继承自此类" alt="" coords="235,304,305,331"/>
 <area shape="rect" id="node7" href="$class_g_cluster.html" title=" " alt="" coords="5,379,84,405"/>
 <area shape="rect" id="node8" href="$class_g_condition.html" title=" " alt="" coords="108,379,203,405"/>
-<area shape="rect" id="node10" href="$class_g_mutable.html" title=" " alt="" coords="227,379,313,405"/>
-<area shape="rect" id="node11" href="$class_g_region.html" title=" " alt="" coords="337,379,414,405"/>
-<area shape="rect" id="node12" href="$class_g_some.html" title=" " alt="" coords="439,379,613,405"/>
-<area shape="rect" id="node2" href="$class_g_element.html" title=" " alt="" coords="227,229,313,256"/>
-<area shape="rect" id="node3" href="$class_g_element_object.html" title=" " alt="" coords="141,155,269,181"/>
-<area shape="rect" id="node4" href="$class_graph_object.html" title=" " alt="" coords="153,80,256,107"/>
+<area shape="rect" id="node10" href="$class_g_mutable.html" title="常规的GGroup及其派生类在运行时是不允许再修改前序后继关系的，但是GMutable可以 具体做法是GMutable在每次run的时候会先调用setup初始化自己这张子图(实际上就是清空)，再调用re..." alt="" coords="227,379,313,405"/>
+<area shape="rect" id="node11" href="$class_g_region.html" title="多个Element的集合，一般非纯并行、也非纯串行(Gluster)时使用" alt="" coords="337,379,414,405"/>
+<area shape="rect" id="node12" href="$class_g_some.html" title="对于插入的所有GElement，不管实际能不能并行，GSome都会把这些GElement提交到异步任务里面全并发执行(详见run) TriggerNum个GElement执行完成后就退出不再执行剩余的，..." alt="" coords="439,379,613,405"/>
+<area shape="rect" id="node2" href="$class_g_element.html" title="CGraph所有广义&quot;结点&quot;的基类，可派生出GNode/GGroup/GAdapter类 public: 提供addGAspect加入切面/addDependGElement加入前序依赖/removeD..." alt="" coords="227,229,313,256"/>
+<area shape="rect" id="node3" href="$class_g_element_object.html" title="GElementObject = GraphObject = CObject，没有新增或删除任何成员" alt="" coords="141,155,269,181"/>
+<area shape="rect" id="node4" href="$class_graph_object.html" title="GraphObject = CObject，没有新增或删除任何成员" alt="" coords="153,80,256,107"/>
 <area shape="rect" id="node5" href="$class_c_object.html" title=" " alt="" coords="168,5,241,32"/>
 <area shape="rect" id="node6" href="$class_c_desc_info.html" title=" " alt="" coords="293,155,381,181"/>
 <area shape="rect" id="node9" href="$class_g_multi_condition.html" title=" " alt="" coords="62,453,249,480"/>

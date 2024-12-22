@@ -1,8 +1,8 @@
 <map id="GDaemonObject" name="GDaemonObject">
-<area shape="rect" id="node1" title=" " alt="" coords="178,155,307,181"/>
+<area shape="rect" id="node1" title="在GraphObject和CDescInfo的基础上新增私有成员param_manager_/event_manager_/param_/interval_ param_manager_/event_m..." alt="" coords="178,155,307,181"/>
 <area shape="rect" id="node5" href="$class_g_daemon.html" title=" " alt="" coords="130,229,217,256"/>
-<area shape="rect" id="node8" href="$class_g_daemon_manager.html" title=" " alt="" coords="241,229,385,256"/>
-<area shape="rect" id="node2" href="$class_graph_object.html" title=" " alt="" coords="131,80,234,107"/>
+<area shape="rect" id="node8" href="$class_g_daemon_manager.html" title="维护GDaemon实例的集合daemons_ 支持批量init/批量destroy，在daemons_里面add/destroy或者清空daemons_等" alt="" coords="241,229,385,256"/>
+<area shape="rect" id="node2" href="$class_graph_object.html" title="GraphObject = CObject，没有新增或删除任何成员" alt="" coords="131,80,234,107"/>
 <area shape="rect" id="node3" href="$class_c_object.html" title=" " alt="" coords="146,5,219,32"/>
 <area shape="rect" id="node4" href="$class_c_desc_info.html" title=" " alt="" coords="259,80,347,107"/>
 <area shape="rect" id="node6" href="$class_camera_g_daemon.html" title=" " alt="" coords="5,304,144,331"/>

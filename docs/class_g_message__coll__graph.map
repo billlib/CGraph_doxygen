@@ -1,7 +1,7 @@
 <map id="GMessage&lt; T, capacity, &gt;" name="GMessage&lt; T, capacity, &gt;">
-<area shape="rect" id="node1" title=" " alt="" coords="5,453,200,480"/>
-<area shape="rect" id="node2" href="$class_g_message_object.html" title=" " alt="" coords="38,208,170,235"/>
-<area shape="rect" id="node3" href="$class_graph_object.html" title=" " alt="" coords="70,81,173,108"/>
+<area shape="rect" id="node1" title="基于UAtomicRingBufferQueue队列实现，支持send/recv" alt="" coords="5,453,200,480"/>
+<area shape="rect" id="node2" href="$class_g_message_object.html" title="GMessageObject在继承GraphObject的基础上删除了run函数 (GraphObject = CObject)" alt="" coords="38,208,170,235"/>
+<area shape="rect" id="node3" href="$class_graph_object.html" title="GraphObject = CObject，没有新增或删除任何成员" alt="" coords="70,81,173,108"/>
 <area shape="rect" id="node4" href="$class_c_object.html" title=" " alt="" coords="145,5,218,32"/>
 <area shape="rect" id="node8" href="$class_utils_object.html" title=" " alt="" coords="199,81,294,108"/>
 <area shape="rect" id="node5" href="$class_u_atomic_ring_buffer_queue.html" title=" " alt="" coords="119,335,383,391"/>

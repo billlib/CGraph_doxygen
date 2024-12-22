@@ -1,8 +1,8 @@
 <map id="GMessageObject" name="GMessageObject">
-<area shape="rect" id="node1" title=" " alt="" coords="253,155,385,181"/>
-<area shape="rect" id="node4" href="$class_g_message.html" title=" " alt="" coords="5,229,200,256"/>
-<area shape="rect" id="node5" href="$class_g_message_manager.html" title=" " alt="" coords="224,229,413,256"/>
-<area shape="rect" id="node6" href="$class_g_message_manager_singleton.html" title=" " alt="" coords="437,229,645,256"/>
-<area shape="rect" id="node2" href="$class_graph_object.html" title=" " alt="" coords="267,80,370,107"/>
+<area shape="rect" id="node1" title="GMessageObject在继承GraphObject的基础上删除了run函数 (GraphObject = CObject)" alt="" coords="253,155,385,181"/>
+<area shape="rect" id="node4" href="$class_g_message.html" title="基于UAtomicRingBufferQueue队列实现，支持send/recv" alt="" coords="5,229,200,256"/>
+<area shape="rect" id="node5" href="$class_g_message_manager.html" title="基于topic，支持send/recv(一发一收)，也支持pub/sub(一发多收) sub端每次订阅特定的topic之前都要先bindTopic生成一个唯一的conn_id_，实际上是绑定到这个con..." alt="" coords="224,229,413,256"/>
+<area shape="rect" id="node6" href="$class_g_message_manager_singleton.html" title="默认的GMessageObject使用的参数类型是GMessageParam，是全局参数，用单例管理更合适" alt="" coords="437,229,645,256"/>
+<area shape="rect" id="node2" href="$class_graph_object.html" title="GraphObject = CObject，没有新增或删除任何成员" alt="" coords="267,80,370,107"/>
 <area shape="rect" id="node3" href="$class_c_object.html" title=" " alt="" coords="282,5,355,32"/>
 </map>

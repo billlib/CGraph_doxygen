@@ -1,12 +1,12 @@
 <map id="GAdapter" name="GAdapter">
 <area shape="rect" id="node1" title=" " alt="" coords="241,304,323,331"/>
 <area shape="rect" id="node7" href="$class_g_coordinator.html" title=" " alt="" coords="5,379,172,405"/>
-<area shape="rect" id="node8" href="$class_g_fence.html" title=" " alt="" coords="196,379,267,405"/>
-<area shape="rect" id="node9" href="$class_g_function.html" title=" " alt="" coords="291,379,377,405"/>
-<area shape="rect" id="node10" href="$class_g_singleton.html" title=" " alt="" coords="402,379,533,405"/>
-<area shape="rect" id="node2" href="$class_g_element.html" title=" " alt="" coords="239,229,325,256"/>
-<area shape="rect" id="node3" href="$class_g_element_object.html" title=" " alt="" coords="153,155,281,181"/>
-<area shape="rect" id="node4" href="$class_graph_object.html" title=" " alt="" coords="165,80,268,107"/>
+<area shape="rect" id="node8" href="$class_g_fence.html" title="默认的前序后继方式只能等待有连接关系的结点 GFence用于在没有依赖关系的情况下，强行等待一个或一组异步结点的运行结束" alt="" coords="196,379,267,405"/>
+<area shape="rect" id="node9" href="$class_g_function.html" title="将一个函数注入成一个GElement，函数可以注入为这个新的GElement的init/run/destroy" alt="" coords="291,379,377,405"/>
+<area shape="rect" id="node10" href="$class_g_singleton.html" title="GAdapter的派生类，核心成员是static USingleton&lt;T&gt; s_singleton单例，可以方便地作为单例GElement使用" alt="" coords="402,379,533,405"/>
+<area shape="rect" id="node2" href="$class_g_element.html" title="CGraph所有广义&quot;结点&quot;的基类，可派生出GNode/GGroup/GAdapter类 public: 提供addGAspect加入切面/addDependGElement加入前序依赖/removeD..." alt="" coords="239,229,325,256"/>
+<area shape="rect" id="node3" href="$class_g_element_object.html" title="GElementObject = GraphObject = CObject，没有新增或删除任何成员" alt="" coords="153,155,281,181"/>
+<area shape="rect" id="node4" href="$class_graph_object.html" title="GraphObject = CObject，没有新增或删除任何成员" alt="" coords="165,80,268,107"/>
 <area shape="rect" id="node5" href="$class_c_object.html" title=" " alt="" coords="180,5,253,32"/>
 <area shape="rect" id="node6" href="$class_c_desc_info.html" title=" " alt="" coords="305,155,393,181"/>
 </map>

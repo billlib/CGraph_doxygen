@@ -1,7 +1,7 @@
 <map id="GDaemonManager" name="GDaemonManager">
-<area shape="rect" id="node1" title=" " alt="" coords="95,229,239,256"/>
-<area shape="rect" id="node2" href="$class_g_daemon_object.html" title=" " alt="" coords="5,155,135,181"/>
-<area shape="rect" id="node3" href="$class_graph_object.html" title=" " alt="" coords="13,80,116,107"/>
+<area shape="rect" id="node1" title="维护GDaemon实例的集合daemons_ 支持批量init/批量destroy，在daemons_里面add/destroy或者清空daemons_等" alt="" coords="95,229,239,256"/>
+<area shape="rect" id="node2" href="$class_g_daemon_object.html" title="在GraphObject和CDescInfo的基础上新增私有成员param_manager_/event_manager_/param_/interval_ param_manager_/event_m..." alt="" coords="5,155,135,181"/>
+<area shape="rect" id="node3" href="$class_graph_object.html" title="GraphObject = CObject，没有新增或删除任何成员" alt="" coords="13,80,116,107"/>
 <area shape="rect" id="node4" href="$class_c_object.html" title=" " alt="" coords="128,5,201,32"/>
 <area shape="rect" id="node6" href="$class_graph_manager.html" title=" " alt="" coords="159,155,373,181"/>
 <area shape="rect" id="node5" href="$class_c_desc_info.html" title=" " alt="" coords="141,80,229,107"/>

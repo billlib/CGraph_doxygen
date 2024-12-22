@@ -1,9 +1,9 @@
 <map id="GOptimizer" name="GOptimizer">
-<area shape="rect" id="node1" title=" " alt="" coords="211,229,307,256"/>
+<area shape="rect" id="node1" title="GOptimizer是用来干嘛的?" alt="" coords="211,229,307,256"/>
 <area shape="rect" id="node5" href="$class_g_max_para_optimizer.html" title=" " alt="" coords="5,304,157,331"/>
-<area shape="rect" id="node6" href="$class_g_separate_optimizer.html" title=" " alt="" coords="181,304,336,331"/>
+<area shape="rect" id="node6" href="$class_g_separate_optimizer.html" title="判断两个element是否可以独立运行" alt="" coords="181,304,336,331"/>
 <area shape="rect" id="node7" href="$class_g_trim_optimizer.html" title=" " alt="" coords="361,304,485,331"/>
-<area shape="rect" id="node2" href="$class_g_element_object.html" title=" " alt="" coords="195,155,323,181"/>
-<area shape="rect" id="node3" href="$class_graph_object.html" title=" " alt="" coords="207,80,310,107"/>
+<area shape="rect" id="node2" href="$class_g_element_object.html" title="GElementObject = GraphObject = CObject，没有新增或删除任何成员" alt="" coords="195,155,323,181"/>
+<area shape="rect" id="node3" href="$class_graph_object.html" title="GraphObject = CObject，没有新增或删除任何成员" alt="" coords="207,80,310,107"/>
 <area shape="rect" id="node4" href="$class_c_object.html" title=" " alt="" coords="222,5,295,32"/>
 </map>

@@ -1,6 +1,6 @@
 <map id="GMessageParam" name="GMessageParam">
-<area shape="rect" id="node1" title=" " alt="" coords="5,229,136,256"/>
+<area shape="rect" id="node1" title="GMessageParam作用域为进程，GParam作用域为图(piepline) GPassedParam作用域为结点(GElement/GDaemon/GAspect/GEvent)" alt="" coords="5,229,136,256"/>
 <area shape="rect" id="node2" href="$class_g_param_object.html" title=" " alt="" coords="13,155,128,181"/>
-<area shape="rect" id="node3" href="$class_graph_object.html" title=" " alt="" coords="19,80,122,107"/>
+<area shape="rect" id="node3" href="$class_graph_object.html" title="GraphObject = CObject，没有新增或删除任何成员" alt="" coords="19,80,122,107"/>
 <area shape="rect" id="node4" href="$class_c_object.html" title=" " alt="" coords="34,5,107,32"/>
 </map>

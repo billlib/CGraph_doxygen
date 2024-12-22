@@ -1,4 +1,4 @@
 <map id="GPerfInfo" name="GPerfInfo">
-<area shape="rect" id="node1" title=" " alt="" coords="5,80,88,107"/>
+<area shape="rect" id="node1" title="性能分析数据，目前只支持耗时和最长连路分析" alt="" coords="5,80,88,107"/>
 <area shape="rect" id="node2" href="$struct_c_struct.html" title=" " alt="" coords="12,5,81,32"/>
 </map>

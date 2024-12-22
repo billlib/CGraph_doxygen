@@ -1,9 +1,9 @@
 <map id="GFence" name="GFence">
-<area shape="rect" id="node1" title=" " alt="" coords="99,379,170,405"/>
+<area shape="rect" id="node1" title="默认的前序后继方式只能等待有连接关系的结点 GFence用于在没有依赖关系的情况下，强行等待一个或一组异步结点的运行结束" alt="" coords="99,379,170,405"/>
 <area shape="rect" id="node2" href="$class_g_adapter.html" title=" " alt="" coords="93,304,176,331"/>
-<area shape="rect" id="node3" href="$class_g_element.html" title=" " alt="" coords="91,229,178,256"/>
-<area shape="rect" id="node4" href="$class_g_element_object.html" title=" " alt="" coords="5,155,133,181"/>
-<area shape="rect" id="node5" href="$class_graph_object.html" title=" " alt="" coords="18,80,121,107"/>
+<area shape="rect" id="node3" href="$class_g_element.html" title="CGraph所有广义&quot;结点&quot;的基类，可派生出GNode/GGroup/GAdapter类 public: 提供addGAspect加入切面/addDependGElement加入前序依赖/removeD..." alt="" coords="91,229,178,256"/>
+<area shape="rect" id="node4" href="$class_g_element_object.html" title="GElementObject = GraphObject = CObject，没有新增或删除任何成员" alt="" coords="5,155,133,181"/>
+<area shape="rect" id="node5" href="$class_graph_object.html" title="GraphObject = CObject，没有新增或删除任何成员" alt="" coords="18,80,121,107"/>
 <area shape="rect" id="node6" href="$class_c_object.html" title=" " alt="" coords="33,5,106,32"/>
 <area shape="rect" id="node7" href="$class_c_desc_info.html" title=" " alt="" coords="157,155,245,181"/>
 </map>

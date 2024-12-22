@@ -72,15 +72,18 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>基于topic，支持send/recv(一发一收)，也支持pub/sub(一发多收) sub端每次订阅特定的topic之前都要先bindTopic生成一个唯一的conn_id_，实际上是绑定到这个conn_id_对应的GMessageObject的消息队列 recv是一发一收则可以直接用topic作为入参  
+ <a href="class_g_message_manager.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_g_message_manager_8h_source.html">GMessageManager.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for GMessageManager&lt; T, &gt;:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_g_message_manager__inherit__graph.png" border="0" usemap="#a_g_message_manager_3_01_t_00_01_4_inherit__map" alt="Inheritance graph"/></div>
 <map name="a_g_message_manager_3_01_t_00_01_4_inherit__map" id="a_g_message_manager_3_01_t_00_01_4_inherit__map">
-<area shape="rect" title=" " alt="" coords="71,244,261,271"/>
-<area shape="rect" href="class_g_message_object.html" title=" " alt="" coords="5,162,137,189"/>
-<area shape="rect" href="class_graph_object.html" title=" " alt="" coords="71,80,173,107"/>
+<area shape="rect" title="基于topic，支持send/recv(一发一收)，也支持pub/sub(一发多收) sub端每次订阅特定的topic之前都要先bindTopic生成一个唯一的conn_id_，实际上是绑定到这个con..." alt="" coords="71,244,261,271"/>
+<area shape="rect" href="class_g_message_object.html" title="GMessageObject在继承GraphObject的基础上删除了run函数 (GraphObject = CObject)" alt="" coords="5,162,137,189"/>
+<area shape="rect" href="class_graph_object.html" title="GraphObject = CObject，没有新增或删除任何成员" alt="" coords="71,80,173,107"/>
 <area shape="rect" href="class_c_object.html" title=" " alt="" coords="129,5,203,32"/>
 <area shape="rect" href="class_graph_manager.html" title=" " alt="" coords="161,155,363,196"/>
 </map>
@@ -90,9 +93,9 @@ Collaboration diagram for GMessageManager&lt; T, &gt;:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_g_message_manager__coll__graph.png" border="0" usemap="#a_g_message_manager_3_01_t_00_01_4_coll__map" alt="Collaboration graph"/></div>
 <map name="a_g_message_manager_3_01_t_00_01_4_coll__map" id="a_g_message_manager_3_01_t_00_01_4_coll__map">
-<area shape="rect" title=" " alt="" coords="71,244,261,271"/>
-<area shape="rect" href="class_g_message_object.html" title=" " alt="" coords="5,162,137,189"/>
-<area shape="rect" href="class_graph_object.html" title=" " alt="" coords="71,80,173,107"/>
+<area shape="rect" title="基于topic，支持send/recv(一发一收)，也支持pub/sub(一发多收) sub端每次订阅特定的topic之前都要先bindTopic生成一个唯一的conn_id_，实际上是绑定到这个con..." alt="" coords="71,244,261,271"/>
+<area shape="rect" href="class_g_message_object.html" title="GMessageObject在继承GraphObject的基础上删除了run函数 (GraphObject = CObject)" alt="" coords="5,162,137,189"/>
+<area shape="rect" href="class_graph_object.html" title="GraphObject = CObject，没有新增或删除任何成员" alt="" coords="71,80,173,107"/>
 <area shape="rect" href="class_c_object.html" title=" " alt="" coords="129,5,203,32"/>
 <area shape="rect" href="class_graph_manager.html" title=" " alt="" coords="161,155,363,196"/>
 </map>
@@ -189,7 +192,18 @@ Friends</h2></td></tr>
 <tr class="memitem:a3b89342cde26d1c33f9cf18e72f1432a"><td class="memTemplItemLeft" align="right" valign="top">class&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_g_message_manager.html#a3b89342cde26d1c33f9cf18e72f1432a">USingleton</a></td></tr>
 <tr class="separator:a3b89342cde26d1c33f9cf18e72f1432a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;typename T = GMessageParam, c_enable_if_t&lt; std::is_base_of&lt; GMessageParam, T &gt;::value, int &gt; = 0&gt;<br />
+class GMessageManager&lt; T, &gt;</h3>
+
+<p>基于topic，支持send/recv(一发一收)，也支持pub/sub(一发多收) sub端每次订阅特定的topic之前都要先bindTopic生成一个唯一的conn_id_，实际上是绑定到这个conn_id_对应的GMessageObject的消息队列 recv是一发一收则可以直接用topic作为入参 </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab65ea794749a274ff5687fbf4d931d80"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab65ea794749a274ff5687fbf4d931d80">&#9670;&nbsp;</a></span>~GMessageManager()</h2>
 

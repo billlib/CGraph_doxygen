@@ -1,8 +1,8 @@
 <map id="CDescInfo" name="CDescInfo">
 <area shape="rect" id="node1" title=" " alt="" coords="5,578,93,605"/>
-<area shape="rect" id="node2" href="$class_g_aspect_object.html" title=" " alt="" coords="147,147,265,174"/>
-<area shape="rect" id="node9" href="$class_g_daemon_object.html" title=" " alt="" coords="141,299,271,326"/>
-<area shape="rect" id="node14" href="$class_g_element.html" title=" " alt="" coords="163,578,249,605"/>
+<area shape="rect" id="node2" href="$class_g_aspect_object.html" title="在GraphObject和CDescInfo的基础上新增私有成员param_manager_/event_manager_/param_/belong_ param_manager_/event_man..." alt="" coords="147,147,265,174"/>
+<area shape="rect" id="node9" href="$class_g_daemon_object.html" title="在GraphObject和CDescInfo的基础上新增私有成员param_manager_/event_manager_/param_/interval_ param_manager_/event_m..." alt="" coords="141,299,271,326"/>
+<area shape="rect" id="node14" href="$class_g_element.html" title="CGraph所有广义&quot;结点&quot;的基类，可派生出GNode/GGroup/GAdapter类 public: 提供addGAspect加入切面/addDependGElement加入前序依赖/removeD..." alt="" coords="163,578,249,605"/>
 <area shape="rect" id="node40" href="$class_g_event_object.html" title=" " alt="" coords="151,806,261,833"/>
 <area shape="rect" id="node44" href="$class_g_pipeline.html" title=" " alt="" coords="164,857,248,883"/>
 <area shape="rect" id="node3" href="$class_g_aspect.html" title=" " alt="" coords="353,85,429,111"/>
@@ -10,23 +10,23 @@
 <area shape="rect" id="node4" href="$class_g_template_aspect.html" title=" " alt="" coords="524,5,704,47"/>
 <area shape="rect" id="node6" href="$class_g_template_aspect.html" title=" " alt="" coords="517,71,711,98"/>
 <area shape="rect" id="node7" href="$class_switch_g_aspect.html" title=" " alt="" coords="555,122,673,149"/>
-<area shape="rect" id="node5" href="$class_g_perf_aspect.html" title=" " alt="" coords="778,13,939,39"/>
+<area shape="rect" id="node5" href="$class_g_perf_aspect.html" title="预先写好的用于做性能分析的切面" alt="" coords="778,13,939,39"/>
 <area shape="rect" id="node10" href="$class_g_daemon.html" title=" " alt="" coords="347,223,434,250"/>
-<area shape="rect" id="node13" href="$class_g_daemon_manager.html" title=" " alt="" coords="319,299,463,326"/>
+<area shape="rect" id="node13" href="$class_g_daemon_manager.html" title="维护GDaemon实例的集合daemons_ 支持批量init/批量destroy，在daemons_里面add/destroy或者清空daemons_等" alt="" coords="319,299,463,326"/>
 <area shape="rect" id="node11" href="$class_camera_g_daemon.html" title=" " alt="" coords="545,173,683,199"/>
 <area shape="rect" id="node12" href="$class_g_template_daemon.html" title=" " alt="" coords="511,223,717,250"/>
 <area shape="rect" id="node15" href="$class_g_adapter.html" title=" " alt="" coords="349,375,432,402"/>
-<area shape="rect" id="node20" href="$class_g_group.html" title=" " alt="" coords="355,578,426,605"/>
-<area shape="rect" id="node27" href="$class_g_node.html" title=" " alt="" coords="357,958,424,985"/>
+<area shape="rect" id="node20" href="$class_g_group.html" title="所有节点组合的基类，所有节点组合功能，均继承自此类" alt="" coords="355,578,426,605"/>
+<area shape="rect" id="node27" href="$class_g_node.html" title="功能运行的最小单元(结点)" alt="" coords="357,958,424,985"/>
 <area shape="rect" id="node16" href="$class_g_coordinator.html" title=" " alt="" coords="531,274,697,301"/>
-<area shape="rect" id="node17" href="$class_g_fence.html" title=" " alt="" coords="579,325,649,351"/>
-<area shape="rect" id="node18" href="$class_g_function.html" title=" " alt="" coords="571,375,657,402"/>
-<area shape="rect" id="node19" href="$class_g_singleton.html" title=" " alt="" coords="549,426,679,453"/>
+<area shape="rect" id="node17" href="$class_g_fence.html" title="默认的前序后继方式只能等待有连接关系的结点 GFence用于在没有依赖关系的情况下，强行等待一个或一组异步结点的运行结束" alt="" coords="579,325,649,351"/>
+<area shape="rect" id="node18" href="$class_g_function.html" title="将一个函数注入成一个GElement，函数可以注入为这个新的GElement的init/run/destroy" alt="" coords="571,375,657,402"/>
+<area shape="rect" id="node19" href="$class_g_singleton.html" title="GAdapter的派生类，核心成员是static USingleton&lt;T&gt; s_singleton单例，可以方便地作为单例GElement使用" alt="" coords="549,426,679,453"/>
 <area shape="rect" id="node21" href="$class_g_cluster.html" title=" " alt="" coords="575,477,653,503"/>
 <area shape="rect" id="node22" href="$class_g_condition.html" title=" " alt="" coords="567,527,661,554"/>
-<area shape="rect" id="node24" href="$class_g_mutable.html" title=" " alt="" coords="571,578,657,605"/>
-<area shape="rect" id="node25" href="$class_g_region.html" title=" " alt="" coords="575,629,653,655"/>
-<area shape="rect" id="node26" href="$class_g_some.html" title=" " alt="" coords="527,679,701,706"/>
+<area shape="rect" id="node24" href="$class_g_mutable.html" title="常规的GGroup及其派生类在运行时是不允许再修改前序后继关系的，但是GMutable可以 具体做法是GMutable在每次run的时候会先调用setup初始化自己这张子图(实际上就是清空)，再调用re..." alt="" coords="571,578,657,605"/>
+<area shape="rect" id="node25" href="$class_g_region.html" title="多个Element的集合，一般非纯并行、也非纯串行(Gluster)时使用" alt="" coords="575,629,653,655"/>
+<area shape="rect" id="node26" href="$class_g_some.html" title="对于插入的所有GElement，不管实际能不能并行，GSome都会把这些GElement提交到异步任务里面全并发执行(详见run) TriggerNum个GElement执行完成后就退出不再执行剩余的，..." alt="" coords="527,679,701,706"/>
 <area shape="rect" id="node23" href="$class_g_multi_condition.html" title=" " alt="" coords="765,527,952,554"/>
 <area shape="rect" id="node28" href="$class_action_g_node.html" title=" " alt="" coords="561,730,667,757"/>
 <area shape="rect" id="node29" href="$class_car_detector_g_node.html" title=" " alt="" coords="542,781,686,807"/>
@@ -40,7 +40,7 @@
 <area shape="rect" id="node37" href="$class_reduce_g_node.html" title=" " alt="" coords="557,1186,671,1213"/>
 <area shape="rect" id="node38" href="$class_result_g_node.html" title=" " alt="" coords="561,1237,667,1263"/>
 <area shape="rect" id="node39" href="$class_show_g_node.html" title=" " alt="" coords="563,1287,665,1314"/>
-<area shape="rect" id="node41" href="$class_g_event.html" title=" " alt="" coords="356,1009,425,1035"/>
+<area shape="rect" id="node41" href="$class_g_event.html" title="事件机制，addGEvent将事件注册到pipeline notify触发，process处理信号，trigger同步执行，asyncProcess异步执行，asyncWait等待异步任务结束" alt="" coords="356,1009,425,1035"/>
 <area shape="rect" id="node43" href="$class_g_event_manager.html" title=" " alt="" coords="327,1059,454,1086"/>
 <area shape="rect" id="node42" href="$class_show_g_event.html" title=" " alt="" coords="562,1338,666,1365"/>
 </map>

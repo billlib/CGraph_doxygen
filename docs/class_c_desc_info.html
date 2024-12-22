@@ -77,9 +77,9 @@ Inheritance diagram for CDescInfo:</div>
 <div class="center"><img src="class_c_desc_info__inherit__graph.png" border="0" usemap="#a_c_desc_info_inherit__map" alt="Inheritance graph"/></div>
 <map name="a_c_desc_info_inherit__map" id="a_c_desc_info_inherit__map">
 <area shape="rect" title=" " alt="" coords="5,578,93,605"/>
-<area shape="rect" href="class_g_aspect_object.html" title=" " alt="" coords="147,147,265,174"/>
-<area shape="rect" href="class_g_daemon_object.html" title=" " alt="" coords="141,299,271,326"/>
-<area shape="rect" href="class_g_element.html" title=" " alt="" coords="163,578,249,605"/>
+<area shape="rect" href="class_g_aspect_object.html" title="在GraphObject和CDescInfo的基础上新增私有成员param_manager_/event_manager_/param_/belong_ param_manager_/event_man..." alt="" coords="147,147,265,174"/>
+<area shape="rect" href="class_g_daemon_object.html" title="在GraphObject和CDescInfo的基础上新增私有成员param_manager_/event_manager_/param_/interval_ param_manager_/event_m..." alt="" coords="141,299,271,326"/>
+<area shape="rect" href="class_g_element.html" title="CGraph所有广义&quot;结点&quot;的基类，可派生出GNode/GGroup/GAdapter类 public: 提供addGAspect加入切面/addDependGElement加入前序依赖/removeD..." alt="" coords="163,578,249,605"/>
 <area shape="rect" href="class_g_event_object.html" title=" " alt="" coords="151,806,261,833"/>
 <area shape="rect" href="class_g_pipeline.html" title=" " alt="" coords="164,857,248,883"/>
 <area shape="rect" href="class_g_aspect.html" title=" " alt="" coords="353,85,429,111"/>
@@ -87,23 +87,23 @@ Inheritance diagram for CDescInfo:</div>
 <area shape="rect" href="class_g_template_aspect.html" title=" " alt="" coords="524,5,704,47"/>
 <area shape="rect" href="class_g_template_aspect.html" title=" " alt="" coords="517,71,711,98"/>
 <area shape="rect" href="class_switch_g_aspect.html" title=" " alt="" coords="555,122,673,149"/>
-<area shape="rect" href="class_g_perf_aspect.html" title=" " alt="" coords="778,13,939,39"/>
+<area shape="rect" href="class_g_perf_aspect.html" title="预先写好的用于做性能分析的切面" alt="" coords="778,13,939,39"/>
 <area shape="rect" href="class_g_daemon.html" title=" " alt="" coords="347,223,434,250"/>
-<area shape="rect" href="class_g_daemon_manager.html" title=" " alt="" coords="319,299,463,326"/>
+<area shape="rect" href="class_g_daemon_manager.html" title="维护GDaemon实例的集合daemons_ 支持批量init/批量destroy，在daemons_里面add/destroy或者清空daemons_等" alt="" coords="319,299,463,326"/>
 <area shape="rect" href="class_camera_g_daemon.html" title=" " alt="" coords="545,173,683,199"/>
 <area shape="rect" href="class_g_template_daemon.html" title=" " alt="" coords="511,223,717,250"/>
 <area shape="rect" href="class_g_adapter.html" title=" " alt="" coords="349,375,432,402"/>
-<area shape="rect" href="class_g_group.html" title=" " alt="" coords="355,578,426,605"/>
-<area shape="rect" href="class_g_node.html" title=" " alt="" coords="357,958,424,985"/>
+<area shape="rect" href="class_g_group.html" title="所有节点组合的基类，所有节点组合功能，均继承自此类" alt="" coords="355,578,426,605"/>
+<area shape="rect" href="class_g_node.html" title="功能运行的最小单元(结点)" alt="" coords="357,958,424,985"/>
 <area shape="rect" href="class_g_coordinator.html" title=" " alt="" coords="531,274,697,301"/>
-<area shape="rect" href="class_g_fence.html" title=" " alt="" coords="579,325,649,351"/>
-<area shape="rect" href="class_g_function.html" title=" " alt="" coords="571,375,657,402"/>
-<area shape="rect" href="class_g_singleton.html" title=" " alt="" coords="549,426,679,453"/>
+<area shape="rect" href="class_g_fence.html" title="默认的前序后继方式只能等待有连接关系的结点 GFence用于在没有依赖关系的情况下，强行等待一个或一组异步结点的运行结束" alt="" coords="579,325,649,351"/>
+<area shape="rect" href="class_g_function.html" title="将一个函数注入成一个GElement，函数可以注入为这个新的GElement的init/run/destroy" alt="" coords="571,375,657,402"/>
+<area shape="rect" href="class_g_singleton.html" title="GAdapter的派生类，核心成员是static USingleton&lt;T&gt; s_singleton单例，可以方便地作为单例GElement使用" alt="" coords="549,426,679,453"/>
 <area shape="rect" href="class_g_cluster.html" title=" " alt="" coords="575,477,653,503"/>
 <area shape="rect" href="class_g_condition.html" title=" " alt="" coords="567,527,661,554"/>
-<area shape="rect" href="class_g_mutable.html" title=" " alt="" coords="571,578,657,605"/>
-<area shape="rect" href="class_g_region.html" title=" " alt="" coords="575,629,653,655"/>
-<area shape="rect" href="class_g_some.html" title=" " alt="" coords="527,679,701,706"/>
+<area shape="rect" href="class_g_mutable.html" title="常规的GGroup及其派生类在运行时是不允许再修改前序后继关系的，但是GMutable可以 具体做法是GMutable在每次run的时候会先调用setup初始化自己这张子图(实际上就是清空)，再调用re..." alt="" coords="571,578,657,605"/>
+<area shape="rect" href="class_g_region.html" title="多个Element的集合，一般非纯并行、也非纯串行(Gluster)时使用" alt="" coords="575,629,653,655"/>
+<area shape="rect" href="class_g_some.html" title="对于插入的所有GElement，不管实际能不能并行，GSome都会把这些GElement提交到异步任务里面全并发执行(详见run) TriggerNum个GElement执行完成后就退出不再执行剩余的，..." alt="" coords="527,679,701,706"/>
 <area shape="rect" href="class_g_multi_condition.html" title=" " alt="" coords="765,527,952,554"/>
 <area shape="rect" href="class_action_g_node.html" title=" " alt="" coords="561,730,667,757"/>
 <area shape="rect" href="class_car_detector_g_node.html" title=" " alt="" coords="542,781,686,807"/>
@@ -117,7 +117,7 @@ Inheritance diagram for CDescInfo:</div>
 <area shape="rect" href="class_reduce_g_node.html" title=" " alt="" coords="557,1186,671,1213"/>
 <area shape="rect" href="class_result_g_node.html" title=" " alt="" coords="561,1237,667,1263"/>
 <area shape="rect" href="class_show_g_node.html" title=" " alt="" coords="563,1287,665,1314"/>
-<area shape="rect" href="class_g_event.html" title=" " alt="" coords="356,1009,425,1035"/>
+<area shape="rect" href="class_g_event.html" title="事件机制，addGEvent将事件注册到pipeline notify触发，process处理信号，trigger同步执行，asyncProcess异步执行，asyncWait等待异步任务结束" alt="" coords="356,1009,425,1035"/>
 <area shape="rect" href="class_g_event_manager.html" title=" " alt="" coords="327,1059,454,1086"/>
 <area shape="rect" href="class_show_g_event.html" title=" " alt="" coords="562,1338,666,1365"/>
 </map>
@@ -147,7 +147,9 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a65a70757cd6d1b6e82e2bd71ce74a3e6"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_desc_info.html#a65a70757cd6d1b6e82e2bd71ce74a3e6">description_</a></td></tr>
 <tr class="separator:a65a70757cd6d1b6e82e2bd71ce74a3e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>广泛用于GAspect/GAspectManager/GDaemon/GDaemonManager/GEvent/GEventManager/GPipeline/GElement及其派生类 这些类及其派生类基本覆盖CGraph的绝大部分场景，因此CDescInfo可以看作是CGraph各个类的描述信息基座 具体：提供名称(name_)、描述(description_)、ID(session_)的set/get接口 比如： GElement又可派生出GAdapter/GGroup/GNode GAdapter又可派生出GCoordinator/GFence/GFunction/GSingleton GGroup又可派生出GCluster/GCondition/GMultiCondition/GMutable/GRegion/GSome </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a2352184ead37ce35450b6aa480fc6f35"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2352184ead37ce35450b6aa480fc6f35">&#9670;&nbsp;</a></span>~CDescInfo()</h2>
 

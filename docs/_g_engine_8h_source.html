@@ -89,94 +89,94 @@ $(function() {
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<a class="code" href="_c_basic_define_8h.html#a41cb86b553ae23ac90ea89fc2b9a8872">CGRAPH_NAMESPACE_BEGIN</a></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_g_engine.html">   21</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_g_engine.html">GEngine</a> : <span class="keyword">public</span> <a class="code" href="class_g_element_object.html">GElementObject</a> {</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_g_engine.html#ac6c30a7f14c28d6d091c339324d34f2c">   23</a></span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_g_engine.html#ac6c30a7f14c28d6d091c339324d34f2c">GEngine</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_g_engine.html#a3546d352c68f08255b57c75a2c92d3d5">   30</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="_c_val_type_8h.html#aa60d403027daa8560015135f90d8b5fa">CStatus</a> <a class="code" href="class_g_engine.html#a3546d352c68f08255b57c75a2c92d3d5">setup</a>(<span class="keyword">const</span> <a class="code" href="_g_element_sorter_8h.html#a56ca0a528fb8114e94d91b8967da6dde">GSortedGElementPtrSet</a>&amp; elements) = 0;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_g_engine.html#aee462b313b492568ff2f3d48a3ddcb34">   37</a></span>&#160;    <a class="code" href="_c_val_type_8h.html#af811623760d39a6f76af698e064e431e">CVoid</a> <a class="code" href="class_g_engine.html#aee462b313b492568ff2f3d48a3ddcb34">link</a>(<span class="keyword">const</span> <a class="code" href="_g_element_sorter_8h.html#a56ca0a528fb8114e94d91b8967da6dde">GSortedGElementPtrSet</a>&amp; elements) {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <a class="code" href="class_g_engine.html#a12d799e4a16cae7c0dc5d73c923074f9">linked_size_</a> = 0;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordflow">for</span> (<a class="code" href="class_g_element.html">GElementPtr</a> element : elements) {</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            element-&gt;shape_ = internal::GElementShape::NORMAL;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <span class="keywordflow">if</span> (1 == element-&gt;run_before_.size()</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                &amp;&amp; 1 == (*element-&gt;run_before_.begin())-&gt;dependence_.size()</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                &amp;&amp; element-&gt;binding_index_ == (*(element-&gt;run_before_.begin()))-&gt;binding_index_) {</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                element-&gt;shape_ = internal::GElementShape::LINKABLE;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                <a class="code" href="class_g_engine.html#a12d799e4a16cae7c0dc5d73c923074f9">linked_size_</a>++;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            }</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        }</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    }</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="class_g_engine.html#a4ac101b21c4b66df7eb351da8560d434">   61</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="_g_element_8h.html#a8cbe38ca982711fa6b6b6708794503c4">GElementPtrArr</a> <a class="code" href="class_g_engine.html#a4ac101b21c4b66df7eb351da8560d434">getTopo</a>(<span class="keyword">const</span> <a class="code" href="_g_element_sorter_8h.html#a56ca0a528fb8114e94d91b8967da6dde">GSortedGElementPtrSet</a>&amp; elements) {</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <a class="code" href="_g_element_8h.html#a8cbe38ca982711fa6b6b6708794503c4">GElementPtrArr</a> result;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        std::queue&lt;GElementPtr&gt; readyQueue;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">auto</span>* element : elements) {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            element-&gt;left_depend_ = element-&gt;dependence_.size();</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <span class="keywordflow">if</span> (0 == element-&gt;left_depend_) {</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                readyQueue.push(element);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            }</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        }</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordflow">while</span>(!readyQueue.empty()) {</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            <span class="keyword">auto</span>* cur = readyQueue.front();</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            readyQueue.pop();</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            result.push_back(cur);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            <span class="keywordflow">for</span> (<span class="keyword">auto</span>* element : cur-&gt;run_before_) {</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                <span class="keywordflow">if</span> (0 == --element-&gt;left_depend_) {</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                    readyQueue.push(element);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                }</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            }</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        }</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">auto</span> element : elements) {</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            <span class="comment">// 计算技术之后，需要恢复一下 depend的信息，以免引入误差</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            element-&gt;left_depend_ = element-&gt;dependence_.size();</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        }</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="keywordflow">return</span> result;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    }</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="class_g_engine.html#a3e8af067a8a0acde4851c9b3c6dbf9b2">   95</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="_c_val_type_8h.html#ad35685a7710c79cc8c68bc222fbaf915">CBool</a> <a class="code" href="class_g_engine.html#a3e8af067a8a0acde4851c9b3c6dbf9b2">isDag</a>(<span class="keyword">const</span> <a class="code" href="_g_element_sorter_8h.html#a56ca0a528fb8114e94d91b8967da6dde">GSortedGElementPtrSet</a>&amp; elements) {</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keyword">const</span> <span class="keyword">auto</span>&amp; result = <a class="code" href="class_g_engine.html#a4ac101b21c4b66df7eb351da8560d434">getTopo</a>(elements);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keywordflow">return</span> result.size() == elements.size();</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    }</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="class_g_engine.html#a0d315e36a6dbd6c3a1af7feb83a5b75b">  101</a></span>&#160;    <a class="code" href="class_u_thread_pool.html">UThreadPoolPtr</a> <a class="code" href="class_g_engine.html#a0d315e36a6dbd6c3a1af7feb83a5b75b">thread_pool_</a> { <span class="keyword">nullptr</span> };                    <span class="comment">// 内部执行的线程池</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="class_g_engine.html#a12d799e4a16cae7c0dc5d73c923074f9">  102</a></span>&#160;    <a class="code" href="_c_val_type_8h.html#aa88d67f9deb9607e0ccaa946a5042966">CSize</a> <a class="code" href="class_g_engine.html#a12d799e4a16cae7c0dc5d73c923074f9">linked_size_</a> = 0;                                     <span class="comment">// 标记有多少个element，是 linkable 的数据</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
-<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="class_g_engine.html#affeeccde5245f99f2ee17a1a585064c3">  104</a></span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_g_element_manager.html">GElementManager</a>;</div>
-<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="class_g_engine.html#a4e007dc772c018d10373bf18b528f96d">  105</a></span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_g_pipeline.html">GPipeline</a>;</div>
-<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="class_g_engine.html#a778dc925482add12356db0a08d591b18">  106</a></span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_g_mutable.html">GMutable</a>;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;};</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
-<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="_g_engine_8h.html#add149a0597169be15f3018063326cc5e">  109</a></span>&#160;<span class="keyword">using</span> <a class="code" href="class_g_engine.html">GEnginePtr</a> = <a class="code" href="class_g_engine.html">GEngine</a> *;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<a class="code" href="_c_basic_define_8h.html#a6bd21ec6a98657b3a574bc8adb1027aa">CGRAPH_NAMESPACE_END</a></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor">#endif </span><span class="comment">//CGRAPH_GENGINE_H</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_g_engine.html">   24</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_g_engine.html">GEngine</a> : <span class="keyword">public</span> <a class="code" href="class_g_element_object.html">GElementObject</a> {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_g_engine.html#ac6c30a7f14c28d6d091c339324d34f2c">   26</a></span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_g_engine.html#ac6c30a7f14c28d6d091c339324d34f2c">GEngine</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_g_engine.html#a3546d352c68f08255b57c75a2c92d3d5">   33</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="_c_val_type_8h.html#aa60d403027daa8560015135f90d8b5fa">CStatus</a> <a class="code" href="class_g_engine.html#a3546d352c68f08255b57c75a2c92d3d5">setup</a>(<span class="keyword">const</span> <a class="code" href="_g_element_sorter_8h.html#a56ca0a528fb8114e94d91b8967da6dde">GSortedGElementPtrSet</a>&amp; elements) = 0;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_g_engine.html#aee462b313b492568ff2f3d48a3ddcb34">   40</a></span>&#160;    <a class="code" href="_c_val_type_8h.html#af811623760d39a6f76af698e064e431e">CVoid</a> <a class="code" href="class_g_engine.html#aee462b313b492568ff2f3d48a3ddcb34">link</a>(<span class="keyword">const</span> <a class="code" href="_g_element_sorter_8h.html#a56ca0a528fb8114e94d91b8967da6dde">GSortedGElementPtrSet</a>&amp; elements) {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <a class="code" href="class_g_engine.html#a12d799e4a16cae7c0dc5d73c923074f9">linked_size_</a> = 0;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordflow">for</span> (<a class="code" href="class_g_element.html">GElementPtr</a> element : elements) {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            element-&gt;shape_ = internal::GElementShape::NORMAL;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <span class="keywordflow">if</span> (1 == element-&gt;run_before_.size()</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                &amp;&amp; 1 == (*element-&gt;run_before_.begin())-&gt;dependence_.size()</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                &amp;&amp; element-&gt;binding_index_ == (*(element-&gt;run_before_.begin()))-&gt;binding_index_) {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                element-&gt;shape_ = internal::GElementShape::LINKABLE;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                <a class="code" href="class_g_engine.html#a12d799e4a16cae7c0dc5d73c923074f9">linked_size_</a>++;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="class_g_engine.html#a4ac101b21c4b66df7eb351da8560d434">   64</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="_g_element_8h.html#a8cbe38ca982711fa6b6b6708794503c4">GElementPtrArr</a> <a class="code" href="class_g_engine.html#a4ac101b21c4b66df7eb351da8560d434">getTopo</a>(<span class="keyword">const</span> <a class="code" href="_g_element_sorter_8h.html#a56ca0a528fb8114e94d91b8967da6dde">GSortedGElementPtrSet</a>&amp; elements) {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <a class="code" href="_g_element_8h.html#a8cbe38ca982711fa6b6b6708794503c4">GElementPtrArr</a> result;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        std::queue&lt;GElementPtr&gt; readyQueue;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">auto</span>* element : elements) {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            element-&gt;left_depend_ = element-&gt;dependence_.size();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <span class="keywordflow">if</span> (0 == element-&gt;left_depend_) {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                readyQueue.push(element);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keywordflow">while</span>(!readyQueue.empty()) {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <span class="keyword">auto</span>* cur = readyQueue.front();</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            readyQueue.pop();</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            result.push_back(cur);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <span class="keywordflow">for</span> (<span class="keyword">auto</span>* element : cur-&gt;run_before_) {</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                <span class="keywordflow">if</span> (0 == --element-&gt;left_depend_) {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                    readyQueue.push(element);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">auto</span> element : elements) {</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            <span class="comment">// 计算技术之后，需要恢复一下 depend的信息，以免引入误差</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            element-&gt;left_depend_ = element-&gt;dependence_.size();</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        }</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keywordflow">return</span> result;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    }</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="class_g_engine.html#a3e8af067a8a0acde4851c9b3c6dbf9b2">   98</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="_c_val_type_8h.html#ad35685a7710c79cc8c68bc222fbaf915">CBool</a> <a class="code" href="class_g_engine.html#a3e8af067a8a0acde4851c9b3c6dbf9b2">isDag</a>(<span class="keyword">const</span> <a class="code" href="_g_element_sorter_8h.html#a56ca0a528fb8114e94d91b8967da6dde">GSortedGElementPtrSet</a>&amp; elements) {</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keyword">const</span> <span class="keyword">auto</span>&amp; result = <a class="code" href="class_g_engine.html#a4ac101b21c4b66df7eb351da8560d434">getTopo</a>(elements);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keywordflow">return</span> result.size() == elements.size();</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    }</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="class_g_engine.html#a0d315e36a6dbd6c3a1af7feb83a5b75b">  104</a></span>&#160;    <a class="code" href="class_u_thread_pool.html">UThreadPoolPtr</a> <a class="code" href="class_g_engine.html#a0d315e36a6dbd6c3a1af7feb83a5b75b">thread_pool_</a> { <span class="keyword">nullptr</span> };                    <span class="comment">// 内部执行的线程池</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="class_g_engine.html#a12d799e4a16cae7c0dc5d73c923074f9">  105</a></span>&#160;    <a class="code" href="_c_val_type_8h.html#aa88d67f9deb9607e0ccaa946a5042966">CSize</a> <a class="code" href="class_g_engine.html#a12d799e4a16cae7c0dc5d73c923074f9">linked_size_</a> = 0;                                     <span class="comment">// 标记有多少个element，是 linkable 的数据</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="class_g_engine.html#affeeccde5245f99f2ee17a1a585064c3">  107</a></span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_g_element_manager.html">GElementManager</a>;</div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="class_g_engine.html#a4e007dc772c018d10373bf18b528f96d">  108</a></span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_g_pipeline.html">GPipeline</a>;</div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="class_g_engine.html#a778dc925482add12356db0a08d591b18">  109</a></span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_g_mutable.html">GMutable</a>;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;};</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="_g_engine_8h.html#add149a0597169be15f3018063326cc5e">  112</a></span>&#160;<span class="keyword">using</span> <a class="code" href="class_g_engine.html">GEnginePtr</a> = <a class="code" href="class_g_engine.html">GEngine</a> *;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<a class="code" href="_c_basic_define_8h.html#a6bd21ec6a98657b3a574bc8adb1027aa">CGRAPH_NAMESPACE_END</a></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor">#endif </span><span class="comment">//CGRAPH_GENGINE_H</span></div>
 <div class="ttc" id="a_c_basic_define_8h_html_a41cb86b553ae23ac90ea89fc2b9a8872"><div class="ttname"><a href="_c_basic_define_8h.html#a41cb86b553ae23ac90ea89fc2b9a8872">CGRAPH_NAMESPACE_BEGIN</a></div><div class="ttdeci">#define CGRAPH_NAMESPACE_BEGIN</div><div class="ttdef"><b>Definition:</b> CBasicDefine.h:14</div></div>
 <div class="ttc" id="a_c_basic_define_8h_html_a6bd21ec6a98657b3a574bc8adb1027aa"><div class="ttname"><a href="_c_basic_define_8h.html#a6bd21ec6a98657b3a574bc8adb1027aa">CGRAPH_NAMESPACE_END</a></div><div class="ttdeci">#define CGRAPH_NAMESPACE_END</div><div class="ttdef"><b>Definition:</b> CBasicDefine.h:17</div></div>
 <div class="ttc" id="a_c_val_type_8h_html_aa60d403027daa8560015135f90d8b5fa"><div class="ttname"><a href="_c_val_type_8h.html#aa60d403027daa8560015135f90d8b5fa">CStatus</a></div><div class="ttdeci">CGraph::internal::CSTATUS CStatus</div><div class="ttdef"><b>Definition:</b> CValType.h:37</div></div>
 <div class="ttc" id="a_c_val_type_8h_html_aa88d67f9deb9607e0ccaa946a5042966"><div class="ttname"><a href="_c_val_type_8h.html#aa88d67f9deb9607e0ccaa946a5042966">CSize</a></div><div class="ttdeci">CGraph::internal::CSIZE CSize</div><div class="ttdef"><b>Definition:</b> CValType.h:19</div></div>
 <div class="ttc" id="a_c_val_type_8h_html_ad35685a7710c79cc8c68bc222fbaf915"><div class="ttname"><a href="_c_val_type_8h.html#ad35685a7710c79cc8c68bc222fbaf915">CBool</a></div><div class="ttdeci">CGraph::internal::CBOOL CBool</div><div class="ttdef"><b>Definition:</b> CValType.h:25</div></div>
 <div class="ttc" id="a_c_val_type_8h_html_af811623760d39a6f76af698e064e431e"><div class="ttname"><a href="_c_val_type_8h.html#af811623760d39a6f76af698e064e431e">CVoid</a></div><div class="ttdeci">CGraph::internal::CVOID CVoid</div><div class="ttdef"><b>Definition:</b> CValType.h:20</div></div>
-<div class="ttc" id="a_g_element_8h_html_a8cbe38ca982711fa6b6b6708794503c4"><div class="ttname"><a href="_g_element_8h.html#a8cbe38ca982711fa6b6b6708794503c4">GElementPtrArr</a></div><div class="ttdeci">std::vector&lt; GElementPtr &gt; GElementPtrArr</div><div class="ttdef"><b>Definition:</b> GElement.h:490</div></div>
+<div class="ttc" id="a_g_element_8h_html_a8cbe38ca982711fa6b6b6708794503c4"><div class="ttname"><a href="_g_element_8h.html#a8cbe38ca982711fa6b6b6708794503c4">GElementPtrArr</a></div><div class="ttdeci">std::vector&lt; GElementPtr &gt; GElementPtrArr</div><div class="ttdef"><b>Definition:</b> GElement.h:504</div></div>
 <div class="ttc" id="a_g_element_sorter_8h_html_a56ca0a528fb8114e94d91b8967da6dde"><div class="ttname"><a href="_g_element_sorter_8h.html#a56ca0a528fb8114e94d91b8967da6dde">GSortedGElementPtrSet</a></div><div class="ttdeci">std::set&lt; GElementPtr, GElementSorter &gt; GSortedGElementPtrSet</div><div class="ttdef"><b>Definition:</b> GElementSorter.h:32</div></div>
 <div class="ttc" id="a_g_engine_define_8h_html"><div class="ttname"><a href="_g_engine_define_8h.html">GEngineDefine.h</a></div></div>
-<div class="ttc" id="aclass_g_element_html"><div class="ttname"><a href="class_g_element.html">GElement</a></div><div class="ttdef"><b>Definition:</b> GElement.h:28</div></div>
+<div class="ttc" id="aclass_g_element_html"><div class="ttname"><a href="class_g_element.html">GElement</a></div><div class="ttdoc">CGraph所有广义&quot;结点&quot;的基类，可派生出GNode/GGroup/GAdapter类 public: 提供addGAspect加入切面/addDependGElement加入前序依赖/removeD...</div><div class="ttdef"><b>Definition:</b> GElement.h:42</div></div>
 <div class="ttc" id="aclass_g_element_manager_html"><div class="ttname"><a href="class_g_element_manager.html">GElementManager</a></div><div class="ttdef"><b>Definition:</b> GElementManager.h:19</div></div>
-<div class="ttc" id="aclass_g_element_object_html"><div class="ttname"><a href="class_g_element_object.html">GElementObject</a></div><div class="ttdef"><b>Definition:</b> GElementObject.h:19</div></div>
-<div class="ttc" id="aclass_g_engine_html"><div class="ttname"><a href="class_g_engine.html">GEngine</a></div><div class="ttdef"><b>Definition:</b> GEngine.h:21</div></div>
-<div class="ttc" id="aclass_g_engine_html_a0d315e36a6dbd6c3a1af7feb83a5b75b"><div class="ttname"><a href="class_g_engine.html#a0d315e36a6dbd6c3a1af7feb83a5b75b">GEngine::thread_pool_</a></div><div class="ttdeci">UThreadPoolPtr thread_pool_</div><div class="ttdef"><b>Definition:</b> GEngine.h:101</div></div>
-<div class="ttc" id="aclass_g_engine_html_a12d799e4a16cae7c0dc5d73c923074f9"><div class="ttname"><a href="class_g_engine.html#a12d799e4a16cae7c0dc5d73c923074f9">GEngine::linked_size_</a></div><div class="ttdeci">CSize linked_size_</div><div class="ttdef"><b>Definition:</b> GEngine.h:102</div></div>
+<div class="ttc" id="aclass_g_element_object_html"><div class="ttname"><a href="class_g_element_object.html">GElementObject</a></div><div class="ttdoc">GElementObject = GraphObject = CObject，没有新增或删除任何成员</div><div class="ttdef"><b>Definition:</b> GElementObject.h:22</div></div>
+<div class="ttc" id="aclass_g_engine_html"><div class="ttname"><a href="class_g_engine.html">GEngine</a></div><div class="ttdoc">CGraph的核心引擎，提供setup/link/getTopo/isDag等核心能力</div><div class="ttdef"><b>Definition:</b> GEngine.h:24</div></div>
+<div class="ttc" id="aclass_g_engine_html_a0d315e36a6dbd6c3a1af7feb83a5b75b"><div class="ttname"><a href="class_g_engine.html#a0d315e36a6dbd6c3a1af7feb83a5b75b">GEngine::thread_pool_</a></div><div class="ttdeci">UThreadPoolPtr thread_pool_</div><div class="ttdef"><b>Definition:</b> GEngine.h:104</div></div>
+<div class="ttc" id="aclass_g_engine_html_a12d799e4a16cae7c0dc5d73c923074f9"><div class="ttname"><a href="class_g_engine.html#a12d799e4a16cae7c0dc5d73c923074f9">GEngine::linked_size_</a></div><div class="ttdeci">CSize linked_size_</div><div class="ttdef"><b>Definition:</b> GEngine.h:105</div></div>
 <div class="ttc" id="aclass_g_engine_html_a3546d352c68f08255b57c75a2c92d3d5"><div class="ttname"><a href="class_g_engine.html#a3546d352c68f08255b57c75a2c92d3d5">GEngine::setup</a></div><div class="ttdeci">virtual CStatus setup(const GSortedGElementPtrSet &amp;elements)=0</div></div>
-<div class="ttc" id="aclass_g_engine_html_a3e8af067a8a0acde4851c9b3c6dbf9b2"><div class="ttname"><a href="class_g_engine.html#a3e8af067a8a0acde4851c9b3c6dbf9b2">GEngine::isDag</a></div><div class="ttdeci">static CBool isDag(const GSortedGElementPtrSet &amp;elements)</div><div class="ttdef"><b>Definition:</b> GEngine.h:95</div></div>
-<div class="ttc" id="aclass_g_engine_html_a4ac101b21c4b66df7eb351da8560d434"><div class="ttname"><a href="class_g_engine.html#a4ac101b21c4b66df7eb351da8560d434">GEngine::getTopo</a></div><div class="ttdeci">static GElementPtrArr getTopo(const GSortedGElementPtrSet &amp;elements)</div><div class="ttdef"><b>Definition:</b> GEngine.h:61</div></div>
+<div class="ttc" id="aclass_g_engine_html_a3e8af067a8a0acde4851c9b3c6dbf9b2"><div class="ttname"><a href="class_g_engine.html#a3e8af067a8a0acde4851c9b3c6dbf9b2">GEngine::isDag</a></div><div class="ttdeci">static CBool isDag(const GSortedGElementPtrSet &amp;elements)</div><div class="ttdef"><b>Definition:</b> GEngine.h:98</div></div>
+<div class="ttc" id="aclass_g_engine_html_a4ac101b21c4b66df7eb351da8560d434"><div class="ttname"><a href="class_g_engine.html#a4ac101b21c4b66df7eb351da8560d434">GEngine::getTopo</a></div><div class="ttdeci">static GElementPtrArr getTopo(const GSortedGElementPtrSet &amp;elements)</div><div class="ttdef"><b>Definition:</b> GEngine.h:64</div></div>
 <div class="ttc" id="aclass_g_engine_html_ac6c30a7f14c28d6d091c339324d34f2c"><div class="ttname"><a href="class_g_engine.html#ac6c30a7f14c28d6d091c339324d34f2c">GEngine::GEngine</a></div><div class="ttdeci">GEngine()=default</div></div>
-<div class="ttc" id="aclass_g_engine_html_aee462b313b492568ff2f3d48a3ddcb34"><div class="ttname"><a href="class_g_engine.html#aee462b313b492568ff2f3d48a3ddcb34">GEngine::link</a></div><div class="ttdeci">CVoid link(const GSortedGElementPtrSet &amp;elements)</div><div class="ttdef"><b>Definition:</b> GEngine.h:37</div></div>
-<div class="ttc" id="aclass_g_mutable_html"><div class="ttname"><a href="class_g_mutable.html">GMutable</a></div><div class="ttdef"><b>Definition:</b> GMutable.h:17</div></div>
+<div class="ttc" id="aclass_g_engine_html_aee462b313b492568ff2f3d48a3ddcb34"><div class="ttname"><a href="class_g_engine.html#aee462b313b492568ff2f3d48a3ddcb34">GEngine::link</a></div><div class="ttdeci">CVoid link(const GSortedGElementPtrSet &amp;elements)</div><div class="ttdef"><b>Definition:</b> GEngine.h:40</div></div>
+<div class="ttc" id="aclass_g_mutable_html"><div class="ttname"><a href="class_g_mutable.html">GMutable</a></div><div class="ttdoc">常规的GGroup及其派生类在运行时是不允许再修改前序后继关系的，但是GMutable可以 具体做法是GMutable在每次run的时候会先调用setup初始化自己这张子图(实际上就是清空)，再调用re...</div><div class="ttdef"><b>Definition:</b> GMutable.h:22</div></div>
 <div class="ttc" id="aclass_g_pipeline_html"><div class="ttname"><a href="class_g_pipeline.html">GPipeline</a></div><div class="ttdef"><b>Definition:</b> GPipeline.h:28</div></div>
 <div class="ttc" id="aclass_u_thread_pool_html"><div class="ttname"><a href="class_u_thread_pool.html">UThreadPool</a></div><div class="ttdef"><b>Definition:</b> UThreadPool.h:29</div></div>
 </div><!-- fragment --></div><!-- contents -->

@@ -3,9 +3,9 @@
 <area shape="rect" id="node2" href="$class_d_ann_object.html" title=" " alt="" coords="25,229,124,256"/>
 <area shape="rect" id="node3" href="$class_domain_object.html" title=" " alt="" coords="5,80,120,107"/>
 <area shape="rect" id="node4" href="$class_c_object.html" title=" " alt="" coords="93,5,166,32"/>
-<area shape="rect" id="node8" href="$class_graph_object.html" title=" " alt="" coords="145,80,247,107"/>
-<area shape="rect" id="node5" href="$class_g_node.html" title=" " alt="" coords="147,304,213,331"/>
-<area shape="rect" id="node6" href="$class_g_element.html" title=" " alt="" coords="150,229,237,256"/>
-<area shape="rect" id="node7" href="$class_g_element_object.html" title=" " alt="" coords="129,155,257,181"/>
+<area shape="rect" id="node8" href="$class_graph_object.html" title="GraphObject = CObject，没有新增或删除任何成员" alt="" coords="145,80,247,107"/>
+<area shape="rect" id="node5" href="$class_g_node.html" title="功能运行的最小单元(结点)" alt="" coords="147,304,213,331"/>
+<area shape="rect" id="node6" href="$class_g_element.html" title="CGraph所有广义&quot;结点&quot;的基类，可派生出GNode/GGroup/GAdapter类 public: 提供addGAspect加入切面/addDependGElement加入前序依赖/removeD..." alt="" coords="150,229,237,256"/>
+<area shape="rect" id="node7" href="$class_g_element_object.html" title="GElementObject = GraphObject = CObject，没有新增或删除任何成员" alt="" coords="129,155,257,181"/>
 <area shape="rect" id="node9" href="$class_c_desc_info.html" title=" " alt="" coords="281,155,369,181"/>
 </map>

@@ -1,4 +1,4 @@
 <map id="GraphObject" name="GraphObject">
-<area shape="rect" id="node1" title=" " alt="" coords="5,80,108,107"/>
+<area shape="rect" id="node1" title="GraphObject = CObject，没有新增或删除任何成员" alt="" coords="5,80,108,107"/>
 <area shape="rect" id="node2" href="$class_c_object.html" title=" " alt="" coords="20,5,93,32"/>
 </map>

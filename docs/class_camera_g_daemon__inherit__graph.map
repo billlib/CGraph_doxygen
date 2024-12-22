@@ -1,8 +1,8 @@
 <map id="CameraGDaemon" name="CameraGDaemon">
 <area shape="rect" id="node1" title=" " alt="" coords="47,304,186,331"/>
 <area shape="rect" id="node2" href="$class_g_daemon.html" title=" " alt="" coords="73,229,160,256"/>
-<area shape="rect" id="node3" href="$class_g_daemon_object.html" title=" " alt="" coords="52,155,181,181"/>
-<area shape="rect" id="node4" href="$class_graph_object.html" title=" " alt="" coords="5,80,108,107"/>
+<area shape="rect" id="node3" href="$class_g_daemon_object.html" title="在GraphObject和CDescInfo的基础上新增私有成员param_manager_/event_manager_/param_/interval_ param_manager_/event_m..." alt="" coords="52,155,181,181"/>
+<area shape="rect" id="node4" href="$class_graph_object.html" title="GraphObject = CObject，没有新增或删除任何成员" alt="" coords="5,80,108,107"/>
 <area shape="rect" id="node5" href="$class_c_object.html" title=" " alt="" coords="20,5,93,32"/>
 <area shape="rect" id="node6" href="$class_c_desc_info.html" title=" " alt="" coords="133,80,221,107"/>
 </map>

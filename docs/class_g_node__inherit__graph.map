@@ -1,5 +1,5 @@
 <map id="GNode" name="GNode">
-<area shape="rect" id="node1" title=" " alt="" coords="588,284,655,311"/>
+<area shape="rect" id="node1" title="功能运行的最小单元(结点)" alt="" coords="588,284,655,311"/>
 <area shape="rect" id="node7" href="$class_action_g_node.html" title=" " alt="" coords="743,5,849,32"/>
 <area shape="rect" id="node8" href="$class_car_detector_g_node.html" title=" " alt="" coords="724,56,868,83"/>
 <area shape="rect" id="node9" href="$class_d_ann_node.html" title=" " alt="" coords="751,107,841,133"/>
@@ -12,9 +12,9 @@
 <area shape="rect" id="node16" href="$class_reduce_g_node.html" title=" " alt="" coords="739,461,853,488"/>
 <area shape="rect" id="node17" href="$class_result_g_node.html" title=" " alt="" coords="743,512,849,539"/>
 <area shape="rect" id="node18" href="$class_show_g_node.html" title=" " alt="" coords="745,563,847,589"/>
-<area shape="rect" id="node2" href="$class_g_element.html" title=" " alt="" coords="453,284,540,311"/>
-<area shape="rect" id="node3" href="$class_g_element_object.html" title=" " alt="" coords="277,259,405,285"/>
-<area shape="rect" id="node4" href="$class_graph_object.html" title=" " alt="" coords="127,259,229,285"/>
+<area shape="rect" id="node2" href="$class_g_element.html" title="CGraph所有广义&quot;结点&quot;的基类，可派生出GNode/GGroup/GAdapter类 public: 提供addGAspect加入切面/addDependGElement加入前序依赖/removeD..." alt="" coords="453,284,540,311"/>
+<area shape="rect" id="node3" href="$class_g_element_object.html" title="GElementObject = GraphObject = CObject，没有新增或删除任何成员" alt="" coords="277,259,405,285"/>
+<area shape="rect" id="node4" href="$class_graph_object.html" title="GraphObject = CObject，没有新增或删除任何成员" alt="" coords="127,259,229,285"/>
 <area shape="rect" id="node5" href="$class_c_object.html" title=" " alt="" coords="5,259,79,285"/>
 <area shape="rect" id="node6" href="$class_c_desc_info.html" title=" " alt="" coords="297,309,385,336"/>
 </map>

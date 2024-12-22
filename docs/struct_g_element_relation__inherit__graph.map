@@ -1,4 +1,4 @@
 <map id="GElementRelation" name="GElementRelation">
-<area shape="rect" id="node1" title=" " alt="" coords="5,80,145,107"/>
+<area shape="rect" id="node1" title="CStruct的派生类，POD，维护GElement的前驱后继结点和所属关系" alt="" coords="5,80,145,107"/>
 <area shape="rect" id="node2" href="$struct_c_struct.html" title=" " alt="" coords="41,5,110,32"/>
 </map>

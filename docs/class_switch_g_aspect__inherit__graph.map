@@ -1,8 +1,8 @@
 <map id="SwitchGAspect" name="SwitchGAspect">
 <area shape="rect" id="node1" title=" " alt="" coords="57,304,176,331"/>
 <area shape="rect" id="node2" href="$class_g_aspect.html" title=" " alt="" coords="79,229,155,256"/>
-<area shape="rect" id="node3" href="$class_g_aspect_object.html" title=" " alt="" coords="57,155,176,181"/>
-<area shape="rect" id="node4" href="$class_graph_object.html" title=" " alt="" coords="5,80,108,107"/>
+<area shape="rect" id="node3" href="$class_g_aspect_object.html" title="在GraphObject和CDescInfo的基础上新增私有成员param_manager_/event_manager_/param_/belong_ param_manager_/event_man..." alt="" coords="57,155,176,181"/>
+<area shape="rect" id="node4" href="$class_graph_object.html" title="GraphObject = CObject，没有新增或删除任何成员" alt="" coords="5,80,108,107"/>
 <area shape="rect" id="node5" href="$class_c_object.html" title=" " alt="" coords="20,5,93,32"/>
 <area shape="rect" id="node6" href="$class_c_desc_info.html" title=" " alt="" coords="133,80,221,107"/>
 </map>

@@ -1,5 +1,5 @@
 <map id="GMessageObject" name="GMessageObject">
-<area shape="rect" id="node1" title=" " alt="" coords="5,155,137,181"/>
-<area shape="rect" id="node2" href="$class_graph_object.html" title=" " alt="" coords="20,80,123,107"/>
+<area shape="rect" id="node1" title="GMessageObject在继承GraphObject的基础上删除了run函数 (GraphObject = CObject)" alt="" coords="5,155,137,181"/>
+<area shape="rect" id="node2" href="$class_graph_object.html" title="GraphObject = CObject，没有新增或删除任何成员" alt="" coords="20,80,123,107"/>
 <area shape="rect" id="node3" href="$class_c_object.html" title=" " alt="" coords="35,5,108,32"/>
 </map>

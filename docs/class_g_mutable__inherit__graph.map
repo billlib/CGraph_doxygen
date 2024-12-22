@@ -1,9 +1,9 @@
 <map id="GMutable" name="GMutable">
-<area shape="rect" id="node1" title=" " alt="" coords="92,379,177,405"/>
-<area shape="rect" id="node2" href="$class_g_group.html" title=" " alt="" coords="99,304,170,331"/>
-<area shape="rect" id="node3" href="$class_g_element.html" title=" " alt="" coords="91,229,178,256"/>
-<area shape="rect" id="node4" href="$class_g_element_object.html" title=" " alt="" coords="5,155,133,181"/>
-<area shape="rect" id="node5" href="$class_graph_object.html" title=" " alt="" coords="18,80,121,107"/>
+<area shape="rect" id="node1" title="常规的GGroup及其派生类在运行时是不允许再修改前序后继关系的，但是GMutable可以 具体做法是GMutable在每次run的时候会先调用setup初始化自己这张子图(实际上就是清空)，再调用re..." alt="" coords="92,379,177,405"/>
+<area shape="rect" id="node2" href="$class_g_group.html" title="所有节点组合的基类，所有节点组合功能，均继承自此类" alt="" coords="99,304,170,331"/>
+<area shape="rect" id="node3" href="$class_g_element.html" title="CGraph所有广义&quot;结点&quot;的基类，可派生出GNode/GGroup/GAdapter类 public: 提供addGAspect加入切面/addDependGElement加入前序依赖/removeD..." alt="" coords="91,229,178,256"/>
+<area shape="rect" id="node4" href="$class_g_element_object.html" title="GElementObject = GraphObject = CObject，没有新增或删除任何成员" alt="" coords="5,155,133,181"/>
+<area shape="rect" id="node5" href="$class_graph_object.html" title="GraphObject = CObject，没有新增或删除任何成员" alt="" coords="18,80,121,107"/>
 <area shape="rect" id="node6" href="$class_c_object.html" title=" " alt="" coords="33,5,106,32"/>
 <area shape="rect" id="node7" href="$class_c_desc_info.html" title=" " alt="" coords="157,155,245,181"/>
 </map>

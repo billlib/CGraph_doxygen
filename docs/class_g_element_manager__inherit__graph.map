@@ -1,7 +1,7 @@
 <map id="GElementManager" name="GElementManager">
 <area shape="rect" id="node1" title=" " alt="" coords="95,229,238,256"/>
-<area shape="rect" id="node2" href="$class_g_element_object.html" title=" " alt="" coords="5,155,133,181"/>
-<area shape="rect" id="node3" href="$class_graph_object.html" title=" " alt="" coords="70,80,173,107"/>
+<area shape="rect" id="node2" href="$class_g_element_object.html" title="GElementObject = GraphObject = CObject，没有新增或删除任何成员" alt="" coords="5,155,133,181"/>
+<area shape="rect" id="node3" href="$class_graph_object.html" title="GraphObject = CObject，没有新增或删除任何成员" alt="" coords="70,80,173,107"/>
 <area shape="rect" id="node4" href="$class_c_object.html" title=" " alt="" coords="129,5,202,32"/>
 <area shape="rect" id="node5" href="$class_graph_manager.html" title=" " alt="" coords="158,155,370,181"/>
 </map>

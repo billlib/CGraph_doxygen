@@ -1,21 +1,21 @@
 <map id="GElement" name="GElement">
-<area shape="rect" id="node1" title=" " alt="" coords="453,309,540,336"/>
+<area shape="rect" id="node1" title="CGraph所有广义&quot;结点&quot;的基类，可派生出GNode/GGroup/GAdapter类 public: 提供addGAspect加入切面/addDependGElement加入前序依赖/removeD..." alt="" coords="453,309,540,336"/>
 <area shape="rect" id="node6" href="$class_g_adapter.html" title=" " alt="" coords="588,107,671,133"/>
-<area shape="rect" id="node11" href="$class_g_group.html" title=" " alt="" coords="594,309,665,336"/>
-<area shape="rect" id="node18" href="$class_g_node.html" title=" " alt="" coords="596,715,663,741"/>
-<area shape="rect" id="node2" href="$class_g_element_object.html" title=" " alt="" coords="277,284,405,311"/>
-<area shape="rect" id="node3" href="$class_graph_object.html" title=" " alt="" coords="127,284,229,311"/>
+<area shape="rect" id="node11" href="$class_g_group.html" title="所有节点组合的基类，所有节点组合功能，均继承自此类" alt="" coords="594,309,665,336"/>
+<area shape="rect" id="node18" href="$class_g_node.html" title="功能运行的最小单元(结点)" alt="" coords="596,715,663,741"/>
+<area shape="rect" id="node2" href="$class_g_element_object.html" title="GElementObject = GraphObject = CObject，没有新增或删除任何成员" alt="" coords="277,284,405,311"/>
+<area shape="rect" id="node3" href="$class_graph_object.html" title="GraphObject = CObject，没有新增或删除任何成员" alt="" coords="127,284,229,311"/>
 <area shape="rect" id="node4" href="$class_c_object.html" title=" " alt="" coords="5,284,79,311"/>
 <area shape="rect" id="node5" href="$class_c_desc_info.html" title=" " alt="" coords="297,335,385,361"/>
 <area shape="rect" id="node7" href="$class_g_coordinator.html" title=" " alt="" coords="729,5,895,32"/>
-<area shape="rect" id="node8" href="$class_g_fence.html" title=" " alt="" coords="777,56,847,83"/>
-<area shape="rect" id="node9" href="$class_g_function.html" title=" " alt="" coords="769,107,855,133"/>
-<area shape="rect" id="node10" href="$class_g_singleton.html" title=" " alt="" coords="747,157,877,184"/>
+<area shape="rect" id="node8" href="$class_g_fence.html" title="默认的前序后继方式只能等待有连接关系的结点 GFence用于在没有依赖关系的情况下，强行等待一个或一组异步结点的运行结束" alt="" coords="777,56,847,83"/>
+<area shape="rect" id="node9" href="$class_g_function.html" title="将一个函数注入成一个GElement，函数可以注入为这个新的GElement的init/run/destroy" alt="" coords="769,107,855,133"/>
+<area shape="rect" id="node10" href="$class_g_singleton.html" title="GAdapter的派生类，核心成员是static USingleton&lt;T&gt; s_singleton单例，可以方便地作为单例GElement使用" alt="" coords="747,157,877,184"/>
 <area shape="rect" id="node12" href="$class_g_cluster.html" title=" " alt="" coords="773,208,851,235"/>
 <area shape="rect" id="node13" href="$class_g_condition.html" title=" " alt="" coords="765,259,859,285"/>
-<area shape="rect" id="node15" href="$class_g_mutable.html" title=" " alt="" coords="769,309,855,336"/>
-<area shape="rect" id="node16" href="$class_g_region.html" title=" " alt="" coords="773,360,851,387"/>
-<area shape="rect" id="node17" href="$class_g_some.html" title=" " alt="" coords="725,411,899,437"/>
+<area shape="rect" id="node15" href="$class_g_mutable.html" title="常规的GGroup及其派生类在运行时是不允许再修改前序后继关系的，但是GMutable可以 具体做法是GMutable在每次run的时候会先调用setup初始化自己这张子图(实际上就是清空)，再调用re..." alt="" coords="769,309,855,336"/>
+<area shape="rect" id="node16" href="$class_g_region.html" title="多个Element的集合，一般非纯并行、也非纯串行(Gluster)时使用" alt="" coords="773,360,851,387"/>
+<area shape="rect" id="node17" href="$class_g_some.html" title="对于插入的所有GElement，不管实际能不能并行，GSome都会把这些GElement提交到异步任务里面全并发执行(详见run) TriggerNum个GElement执行完成后就退出不再执行剩余的，..." alt="" coords="725,411,899,437"/>
 <area shape="rect" id="node14" href="$class_g_multi_condition.html" title=" " alt="" coords="953,259,1140,285"/>
 <area shape="rect" id="node19" href="$class_action_g_node.html" title=" " alt="" coords="759,461,865,488"/>
 <area shape="rect" id="node20" href="$class_car_detector_g_node.html" title=" " alt="" coords="740,512,884,539"/>

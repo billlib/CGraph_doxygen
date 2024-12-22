@@ -1,9 +1,9 @@
 <map id="GEngine" name="GEngine">
-<area shape="rect" id="node1" title=" " alt="" coords="183,229,259,256"/>
-<area shape="rect" id="node5" href="$class_g_dynamic_engine.html" title=" " alt="" coords="5,304,140,331"/>
+<area shape="rect" id="node1" title="CGraph的核心引擎，提供setup/link/getTopo/isDag等核心能力" alt="" coords="183,229,259,256"/>
+<area shape="rect" id="node5" href="$class_g_dynamic_engine.html" title="CGraph的核心引擎，提供DAG类型分析、拓扑分析、动态图运行、全并发执行、全串行执行等能力" alt="" coords="5,304,140,331"/>
 <area shape="rect" id="node6" href="$class_g_static_engine.html" title=" " alt="" coords="164,304,277,331"/>
 <area shape="rect" id="node7" href="$class_g_topo_engine.html" title=" " alt="" coords="302,304,409,331"/>
-<area shape="rect" id="node2" href="$class_g_element_object.html" title=" " alt="" coords="157,155,285,181"/>
-<area shape="rect" id="node3" href="$class_graph_object.html" title=" " alt="" coords="169,80,272,107"/>
+<area shape="rect" id="node2" href="$class_g_element_object.html" title="GElementObject = GraphObject = CObject，没有新增或删除任何成员" alt="" coords="157,155,285,181"/>
+<area shape="rect" id="node3" href="$class_graph_object.html" title="GraphObject = CObject，没有新增或删除任何成员" alt="" coords="169,80,272,107"/>
 <area shape="rect" id="node4" href="$class_c_object.html" title=" " alt="" coords="184,5,257,32"/>
 </map>

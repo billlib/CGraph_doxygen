@@ -3,9 +3,9 @@
 <area shape="rect" id="node6" href="$class_g_template_aspect.html" title=" " alt="" coords="5,304,185,345"/>
 <area shape="rect" id="node8" href="$class_g_template_aspect.html" title=" " alt="" coords="210,311,405,338"/>
 <area shape="rect" id="node9" href="$class_switch_g_aspect.html" title=" " alt="" coords="429,311,548,338"/>
-<area shape="rect" id="node2" href="$class_g_aspect_object.html" title=" " alt="" coords="248,155,367,181"/>
-<area shape="rect" id="node3" href="$class_graph_object.html" title=" " alt="" coords="196,80,299,107"/>
+<area shape="rect" id="node2" href="$class_g_aspect_object.html" title="在GraphObject和CDescInfo的基础上新增私有成员param_manager_/event_manager_/param_/belong_ param_manager_/event_man..." alt="" coords="248,155,367,181"/>
+<area shape="rect" id="node3" href="$class_graph_object.html" title="GraphObject = CObject，没有新增或删除任何成员" alt="" coords="196,80,299,107"/>
 <area shape="rect" id="node4" href="$class_c_object.html" title=" " alt="" coords="211,5,284,32"/>
 <area shape="rect" id="node5" href="$class_c_desc_info.html" title=" " alt="" coords="323,80,411,107"/>
-<area shape="rect" id="node7" href="$class_g_perf_aspect.html" title=" " alt="" coords="15,393,176,420"/>
+<area shape="rect" id="node7" href="$class_g_perf_aspect.html" title="预先写好的用于做性能分析的切面" alt="" coords="15,393,176,420"/>
 </map>

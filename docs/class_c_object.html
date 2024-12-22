@@ -84,33 +84,33 @@ Inheritance diagram for CObject:</div>
 <area shape="rect" href="class_graph_manager.html" title=" " alt="" coords="132,183,335,209"/>
 <area shape="rect" href="class_graph_manager.html" title=" " alt="" coords="128,576,339,603"/>
 <area shape="rect" href="class_domain_object.html" title=" " alt="" coords="176,744,291,771"/>
-<area shape="rect" href="class_graph_manager.html" title=" " alt="" coords="153,795,313,821"/>
-<area shape="rect" href="class_graph_object.html" title=" " alt="" coords="182,487,285,513"/>
+<area shape="rect" href="class_graph_manager.html" title="所有以GraphObject为基类的对象（GAsepct/GDaemon/GEvent/GElement/GPipeline/GParam）的管理器的基类" alt="" coords="153,795,313,821"/>
+<area shape="rect" href="class_graph_object.html" title="GraphObject = CObject，没有新增或删除任何成员" alt="" coords="182,487,285,513"/>
 <area shape="rect" href="class_utils_object.html" title=" " alt="" coords="186,1233,281,1260"/>
 <area shape="rect" href="class_g_element_manager.html" title=" " alt="" coords="693,5,835,32"/>
 <area shape="rect" href="class_g_event_manager.html" title=" " alt="" coords="701,309,827,336"/>
-<area shape="rect" href="class_g_daemon_manager.html" title=" " alt="" coords="692,385,836,412"/>
+<area shape="rect" href="class_g_daemon_manager.html" title="维护GDaemon实例的集合daemons_ 支持批量init/批量destroy，在daemons_里面add/destroy或者清空daemons_等" alt="" coords="692,385,836,412"/>
 <area shape="rect" href="class_g_param_manager.html" title=" " alt="" coords="699,779,829,805"/>
-<area shape="rect" href="class_g_message_manager.html" title=" " alt="" coords="669,703,859,729"/>
+<area shape="rect" href="class_g_message_manager.html" title="基于topic，支持send/recv(一发一收)，也支持pub/sub(一发多收) sub端每次订阅特定的topic之前都要先bindTopic生成一个唯一的conn_id_，实际上是绑定到这个con..." alt="" coords="669,703,859,729"/>
 <area shape="rect" href="class_g_aspect_manager.html" title=" " alt="" coords="697,208,831,235"/>
 <area shape="rect" href="class_g_pipeline_manager.html" title=" " alt="" coords="693,588,835,615"/>
 <area shape="rect" href="class_d_ann_object.html" title=" " alt="" coords="455,867,554,893"/>
 <area shape="rect" href="class_d_ann_node.html" title=" " alt="" coords="719,855,809,881"/>
 <area shape="rect" href="struct_d_ann_param.html" title=" " alt="" coords="715,905,813,932"/>
-<area shape="rect" href="class_g_aspect_object.html" title=" " alt="" coords="445,208,564,235"/>
-<area shape="rect" href="class_g_daemon_object.html" title=" " alt="" coords="440,461,569,488"/>
-<area shape="rect" href="class_g_element_object.html" title=" " alt="" coords="441,107,569,133"/>
+<area shape="rect" href="class_g_aspect_object.html" title="在GraphObject和CDescInfo的基础上新增私有成员param_manager_/event_manager_/param_/belong_ param_manager_/event_man..." alt="" coords="445,208,564,235"/>
+<area shape="rect" href="class_g_daemon_object.html" title="在GraphObject和CDescInfo的基础上新增私有成员param_manager_/event_manager_/param_/interval_ param_manager_/event_m..." alt="" coords="440,461,569,488"/>
+<area shape="rect" href="class_g_element_object.html" title="GElementObject = GraphObject = CObject，没有新增或删除任何成员" alt="" coords="441,107,569,133"/>
 <area shape="rect" href="class_g_event_object.html" title=" " alt="" coords="449,309,560,336"/>
-<area shape="rect" href="class_g_message_object.html" title=" " alt="" coords="439,664,571,691"/>
+<area shape="rect" href="class_g_message_object.html" title="GMessageObject在继承GraphObject的基础上删除了run函数 (GraphObject = CObject)" alt="" coords="439,664,571,691"/>
 <area shape="rect" href="class_g_param_object.html" title=" " alt="" coords="447,765,562,792"/>
-<area shape="rect" href="class_g_perf.html" title=" " alt="" coords="475,411,534,437"/>
+<area shape="rect" href="class_g_perf.html" title="pipeline性能分析，具体做法是通过inject注入统计性能的切面，然后运行pipeline， 接着输出最长路径和整个pipeline的可视化，最后通过recover删除切面恢复原来的pipelin..." alt="" coords="475,411,534,437"/>
 <area shape="rect" href="class_g_pipeline_object.html" title=" " alt="" coords="441,563,568,589"/>
 <area shape="rect" href="class_g_schedule.html" title=" " alt="" coords="459,512,550,539"/>
 <area shape="rect" href="class_g_aspect.html" title=" " alt="" coords="726,259,802,285"/>
 <area shape="rect" href="class_g_daemon.html" title=" " alt="" coords="721,461,807,488"/>
-<area shape="rect" href="class_g_element.html" title=" " alt="" coords="721,107,807,133"/>
+<area shape="rect" href="class_g_element.html" title="CGraph所有广义&quot;结点&quot;的基类，可派生出GNode/GGroup/GAdapter类 public: 提供addGAspect加入切面/addDependGElement加入前序依赖/removeD..." alt="" coords="721,107,807,133"/>
 <area shape="rect" href="class_g_element_repository.html" title=" " alt="" coords="686,157,842,184"/>
-<area shape="rect" href="class_g_engine.html" title=" " alt="" coords="726,56,802,83"/>
+<area shape="rect" href="class_g_engine.html" title="CGraph的核心引擎，提供setup/link/getTopo/isDag等核心能力" alt="" coords="726,56,802,83"/>
 <area shape="rect" href="class_u_serial_unique_array.html" title=" " alt="" coords="429,1121,580,1162"/>
 <area shape="rect" href="class_u_singleton.html" title=" " alt="" coords="388,1187,621,1243"/>
 <area shape="rect" href="class_u_small_vector.html" title=" " alt="" coords="397,1267,612,1293"/>
@@ -140,7 +140,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a75fc8a71d266f635f42955a16361036d"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_object.html#a75fc8a71d266f635f42955a16361036d">~CObject</a> ()=default</td></tr>
 <tr class="separator:a75fc8a71d266f635f42955a16361036d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>各类功能单元的最底层的基类，包含虚函数init/destroy和纯虚函数run 派生类如果不支持run也要显式写NO_SUPPORT(比如UtilsObject) 具体可派生出GElementManager/GAsptectManager/GEventManager/GDaemonManager/ GPipelineManager/GMessageManager/GParamManager等manager类、GEngine/GAspect/ GPerf/GDaemon/GSchedule/GElement/GElementRepository/DAnnNode/DAnnParam等结点类 以及UtilsObject的派生类等 </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae30ce05f6bf916caaba7db2913c47bd7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae30ce05f6bf916caaba7db2913c47bd7">&#9670;&nbsp;</a></span>CObject()</h2>
 

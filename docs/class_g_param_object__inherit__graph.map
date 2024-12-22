@@ -1,10 +1,10 @@
 <map id="GParamObject" name="GParamObject">
 <area shape="rect" id="node1" title=" " alt="" coords="277,245,392,272"/>
-<area shape="rect" id="node4" href="$class_g_message_param.html" title=" " alt="" coords="440,81,571,108"/>
+<area shape="rect" id="node4" href="$class_g_message_param.html" title="GMessageParam作用域为进程，GParam作用域为图(piepline) GPassedParam作用域为结点(GElement/GDaemon/GAspect/GEvent)" alt="" coords="440,81,571,108"/>
 <area shape="rect" id="node8" href="$class_g_param.html" title=" " alt="" coords="469,220,542,247"/>
 <area shape="rect" id="node13" href="$class_g_param_manager.html" title=" " alt="" coords="440,271,571,297"/>
 <area shape="rect" id="node14" href="$class_g_passed_param.html" title=" " alt="" coords="446,335,565,361"/>
-<area shape="rect" id="node2" href="$class_graph_object.html" title=" " alt="" coords="127,245,229,272"/>
+<area shape="rect" id="node2" href="$class_graph_object.html" title="GraphObject = CObject，没有新增或删除任何成员" alt="" coords="127,245,229,272"/>
 <area shape="rect" id="node3" href="$class_c_object.html" title=" " alt="" coords="5,245,79,272"/>
 <area shape="rect" id="node5" href="$struct_image_m_param.html" title=" " alt="" coords="644,5,760,32"/>
 <area shape="rect" id="node6" href="$struct_input_m_param.html" title=" " alt="" coords="648,56,756,83"/>

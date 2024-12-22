@@ -1,6 +1,6 @@
 <map id="GPassedParam" name="GPassedParam">
 <area shape="rect" id="node1" title=" " alt="" coords="5,229,124,256"/>
 <area shape="rect" id="node2" href="$class_g_param_object.html" title=" " alt="" coords="7,155,122,181"/>
-<area shape="rect" id="node3" href="$class_graph_object.html" title=" " alt="" coords="13,80,116,107"/>
+<area shape="rect" id="node3" href="$class_graph_object.html" title="GraphObject = CObject，没有新增或删除任何成员" alt="" coords="13,80,116,107"/>
 <area shape="rect" id="node4" href="$class_c_object.html" title=" " alt="" coords="28,5,101,32"/>
 </map>

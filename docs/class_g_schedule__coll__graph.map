@@ -1,6 +1,6 @@
 <map id="GSchedule" name="GSchedule">
 <area shape="rect" id="node1" title=" " alt="" coords="266,543,357,569"/>
-<area shape="rect" id="node2" href="$class_graph_object.html" title=" " alt="" coords="5,132,108,159"/>
+<area shape="rect" id="node2" href="$class_graph_object.html" title="GraphObject = CObject，没有新增或删除任何成员" alt="" coords="5,132,108,159"/>
 <area shape="rect" id="node3" href="$class_c_object.html" title=" " alt="" coords="39,5,112,32"/>
 <area shape="rect" id="node6" href="$class_utils_object.html" title=" " alt="" coords="99,81,193,108"/>
 <area shape="rect" id="node4" href="$class_u_thread_pool.html" title=" " alt="" coords="259,439,364,465"/>

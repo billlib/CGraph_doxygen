@@ -1,5 +1,5 @@
 <map id="GPerf" name="GPerf">
-<area shape="rect" id="node1" title=" " alt="" coords="27,155,86,181"/>
-<area shape="rect" id="node2" href="$class_graph_object.html" title=" " alt="" coords="5,80,108,107"/>
+<area shape="rect" id="node1" title="pipeline性能分析，具体做法是通过inject注入统计性能的切面，然后运行pipeline， 接着输出最长路径和整个pipeline的可视化，最后通过recover删除切面恢复原来的pipelin..." alt="" coords="27,155,86,181"/>
+<area shape="rect" id="node2" href="$class_graph_object.html" title="GraphObject = CObject，没有新增或删除任何成员" alt="" coords="5,80,108,107"/>
 <area shape="rect" id="node3" href="$class_c_object.html" title=" " alt="" coords="20,5,93,32"/>
 </map>

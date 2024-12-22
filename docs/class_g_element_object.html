@@ -68,32 +68,35 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p><a class="el" href="class_g_element_object.html" title="GElementObject = GraphObject = CObject，没有新增或删除任何成员">GElementObject</a> = <a class="el" href="class_graph_object.html" title="GraphObject = CObject，没有新增或删除任何成员">GraphObject</a> = CObject，没有新增或删除任何成员  
+ <a href="class_g_element_object.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_g_element_object_8h_source.html">GElementObject.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for GElementObject:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_g_element_object__inherit__graph.png" border="0" usemap="#a_g_element_object_inherit__map" alt="Inheritance graph"/></div>
 <map name="a_g_element_object_inherit__map" id="a_g_element_object_inherit__map">
-<area shape="rect" title=" " alt="" coords="277,740,405,767"/>
-<area shape="rect" href="class_g_element.html" title=" " alt="" coords="488,487,575,513"/>
+<area shape="rect" title="GElementObject = GraphObject = CObject，没有新增或删除任何成员" alt="" coords="277,740,405,767"/>
+<area shape="rect" href="class_g_element.html" title="CGraph所有广义&quot;结点&quot;的基类，可派生出GNode/GGroup/GAdapter类 public: 提供addGAspect加入切面/addDependGElement加入前序依赖/removeD..." alt="" coords="488,487,575,513"/>
 <area shape="rect" href="class_g_element_manager.html" title=" " alt="" coords="460,689,603,716"/>
 <area shape="rect" href="class_g_element_repository.html" title=" " alt="" coords="453,740,609,767"/>
-<area shape="rect" href="class_g_engine.html" title=" " alt="" coords="493,791,569,817"/>
-<area shape="rect" href="class_g_optimizer.html" title=" " alt="" coords="483,917,579,944"/>
-<area shape="rect" href="class_graph_object.html" title=" " alt="" coords="127,740,229,767"/>
+<area shape="rect" href="class_g_engine.html" title="CGraph的核心引擎，提供setup/link/getTopo/isDag等核心能力" alt="" coords="493,791,569,817"/>
+<area shape="rect" href="class_g_optimizer.html" title="GOptimizer是用来干嘛的?" alt="" coords="483,917,579,944"/>
+<area shape="rect" href="class_graph_object.html" title="GraphObject = CObject，没有新增或删除任何成员" alt="" coords="127,740,229,767"/>
 <area shape="rect" href="class_c_object.html" title=" " alt="" coords="5,740,79,767"/>
 <area shape="rect" href="class_g_adapter.html" title=" " alt="" coords="693,107,776,133"/>
-<area shape="rect" href="class_g_group.html" title=" " alt="" coords="699,335,770,361"/>
-<area shape="rect" href="class_g_node.html" title=" " alt="" coords="701,689,768,716"/>
+<area shape="rect" href="class_g_group.html" title="所有节点组合的基类，所有节点组合功能，均继承自此类" alt="" coords="699,335,770,361"/>
+<area shape="rect" href="class_g_node.html" title="功能运行的最小单元(结点)" alt="" coords="701,689,768,716"/>
 <area shape="rect" href="class_g_coordinator.html" title=" " alt="" coords="870,5,1037,32"/>
-<area shape="rect" href="class_g_fence.html" title=" " alt="" coords="918,56,989,83"/>
-<area shape="rect" href="class_g_function.html" title=" " alt="" coords="910,107,997,133"/>
-<area shape="rect" href="class_g_singleton.html" title=" " alt="" coords="888,157,1019,184"/>
+<area shape="rect" href="class_g_fence.html" title="默认的前序后继方式只能等待有连接关系的结点 GFence用于在没有依赖关系的情况下，强行等待一个或一组异步结点的运行结束" alt="" coords="918,56,989,83"/>
+<area shape="rect" href="class_g_function.html" title="将一个函数注入成一个GElement，函数可以注入为这个新的GElement的init/run/destroy" alt="" coords="910,107,997,133"/>
+<area shape="rect" href="class_g_singleton.html" title="GAdapter的派生类，核心成员是static USingleton&lt;T&gt; s_singleton单例，可以方便地作为单例GElement使用" alt="" coords="888,157,1019,184"/>
 <area shape="rect" href="class_g_cluster.html" title=" " alt="" coords="914,208,993,235"/>
 <area shape="rect" href="class_g_condition.html" title=" " alt="" coords="906,259,1001,285"/>
-<area shape="rect" href="class_g_mutable.html" title=" " alt="" coords="911,309,996,336"/>
-<area shape="rect" href="class_g_region.html" title=" " alt="" coords="915,360,992,387"/>
-<area shape="rect" href="class_g_some.html" title=" " alt="" coords="866,411,1041,437"/>
+<area shape="rect" href="class_g_mutable.html" title="常规的GGroup及其派生类在运行时是不允许再修改前序后继关系的，但是GMutable可以 具体做法是GMutable在每次run的时候会先调用setup初始化自己这张子图(实际上就是清空)，再调用re..." alt="" coords="911,309,996,336"/>
+<area shape="rect" href="class_g_region.html" title="多个Element的集合，一般非纯并行、也非纯串行(Gluster)时使用" alt="" coords="915,360,992,387"/>
+<area shape="rect" href="class_g_some.html" title="对于插入的所有GElement，不管实际能不能并行，GSome都会把这些GElement提交到异步任务里面全并发执行(详见run) TriggerNum个GElement执行完成后就退出不再执行剩余的，..." alt="" coords="866,411,1041,437"/>
 <area shape="rect" href="class_g_multi_condition.html" title=" " alt="" coords="1095,259,1281,285"/>
 <area shape="rect" href="class_action_g_node.html" title=" " alt="" coords="900,461,1007,488"/>
 <area shape="rect" href="class_car_detector_g_node.html" title=" " alt="" coords="881,512,1025,539"/>
@@ -107,11 +110,11 @@ Inheritance diagram for GElementObject:</div>
 <area shape="rect" href="class_reduce_g_node.html" title=" " alt="" coords="896,917,1011,944"/>
 <area shape="rect" href="class_result_g_node.html" title=" " alt="" coords="900,968,1007,995"/>
 <area shape="rect" href="class_show_g_node.html" title=" " alt="" coords="903,1019,1004,1045"/>
-<area shape="rect" href="class_g_dynamic_engine.html" title=" " alt="" coords="667,740,802,767"/>
+<area shape="rect" href="class_g_dynamic_engine.html" title="CGraph的核心引擎，提供DAG类型分析、拓扑分析、动态图运行、全并发执行、全串行执行等能力" alt="" coords="667,740,802,767"/>
 <area shape="rect" href="class_g_static_engine.html" title=" " alt="" coords="678,791,791,817"/>
 <area shape="rect" href="class_g_topo_engine.html" title=" " alt="" coords="681,841,788,868"/>
 <area shape="rect" href="class_g_max_para_optimizer.html" title=" " alt="" coords="659,892,811,919"/>
-<area shape="rect" href="class_g_separate_optimizer.html" title=" " alt="" coords="657,943,812,969"/>
+<area shape="rect" href="class_g_separate_optimizer.html" title="判断两个element是否可以独立运行" alt="" coords="657,943,812,969"/>
 <area shape="rect" href="class_g_trim_optimizer.html" title=" " alt="" coords="673,993,797,1020"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
@@ -120,8 +123,8 @@ Collaboration diagram for GElementObject:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_g_element_object__coll__graph.png" border="0" usemap="#a_g_element_object_coll__map" alt="Collaboration graph"/></div>
 <map name="a_g_element_object_coll__map" id="a_g_element_object_coll__map">
-<area shape="rect" title=" " alt="" coords="5,155,133,181"/>
-<area shape="rect" href="class_graph_object.html" title=" " alt="" coords="18,80,121,107"/>
+<area shape="rect" title="GElementObject = GraphObject = CObject，没有新增或删除任何成员" alt="" coords="5,155,133,181"/>
+<area shape="rect" href="class_graph_object.html" title="GraphObject = CObject，没有新增或删除任何成员" alt="" coords="18,80,121,107"/>
 <area shape="rect" href="class_c_object.html" title=" " alt="" coords="33,5,106,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
@@ -140,7 +143,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a75fc8a71d266f635f42955a16361036d inherit pub_methods_class_c_object"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_object.html#a75fc8a71d266f635f42955a16361036d">~CObject</a> ()=default</td></tr>
 <tr class="separator:a75fc8a71d266f635f42955a16361036d inherit pub_methods_class_c_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="class_g_element_object.html" title="GElementObject = GraphObject = CObject，没有新增或删除任何成员">GElementObject</a> = <a class="el" href="class_graph_object.html" title="GraphObject = CObject，没有新增或删除任何成员">GraphObject</a> = CObject，没有新增或删除任何成员 </p>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>src/GraphCtrl/GraphElement/<a class="el" href="_g_element_object_8h_source.html">GElementObject.h</a></li>
 </ul>
 </div><!-- contents -->
